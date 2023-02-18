@@ -2,18 +2,17 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 body {
-    font-style: noraml;
+    font-style: Roboto, sans-serif;
     max-width: 1400px;
     margin: auto;
+    padding: 0;
   }
 
 header {
     display: flex;
     justify-content : center;
-    
     padding: 20px 0 20px 0;
     color: black;
-    text-weight: 900;
 }
 
 form {
@@ -26,6 +25,7 @@ form {
 }
 
 form input {
+    font-weight: bold;
     background-color: #dcdcdc ;
     border: unset;
 }
@@ -193,26 +193,21 @@ footer h3 {
   margin-bottom: 0;
 }
 
-footer img {
-  color: #fff;
-  font-family: 
-  font-size: 1rem;
-}
-
 footer ul {
     padding:0;
     text-decoration: none;
 }
 
-footer a {
-    color: #fff;
-  }
 
 footer li {
   list-style-type: none;
   text-decoration: none;
   margin: 0;
   text: white;
+} 
+
+footer a {
+  color:white;
 }
 
 
@@ -225,6 +220,48 @@ a {
 .fa-heart{
   font-size: 2em;
   align-self: center;
-  font-weight: unset;
-  
+  font-weight: unset;  
+}
+
+
+header.header-menus{
+  display: flex;
+  gap: 100px;
+  padding-top: 20px;
+}
+
+.fa-arrow-left {
+  padding-top: 30px;
+  font-size: x-large;
+}
+
+.menus-cards {
+  padding: 0;
+}
+.menus-cards img {
+  border-radius: unset;
+  padding: 0;
+}
+
+.menus-cards header {
+  padding: 0;
+}
+
+.menus-cards article {
+  margin-top: -5rem;
+  border-radius: 40px 40px 0 0;
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 20px 20px 0 20px;
+}
+
+ article header {
+  padding: 1rem 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-family: Shrikhand,"cursive";
 }
