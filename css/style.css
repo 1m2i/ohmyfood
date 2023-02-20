@@ -2,7 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 body {
-    font-style: Roboto, sans-serif;
+    font-style: normal;
     max-width: 1400px;
     margin: auto;
     padding: 0;
@@ -117,8 +117,8 @@ main li {
   border-radius: 20px;
   background-color: $white;
   box-shadow:(0, 10px, 6px, dark-gray);
-
 }
+
 .restaurant-cards {
   display:flex;
   flex-direction: column;
@@ -224,10 +224,12 @@ a {
 }
 
 
-header.header-menus{
+header.header-menus {
   display: flex;
+  align-items: center;
   gap: 100px;
   padding-top: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .fa-arrow-left {
@@ -237,10 +239,13 @@ header.header-menus{
 
 .menus-cards {
   padding: 0;
+  width: 100%;
 }
 .menus-cards img {
   border-radius: unset;
   padding: 0;
+  height: 400px;
+  width: 100%;
 }
 
 .menus-cards header {
@@ -264,4 +269,35 @@ header.header-menus{
 
 header h1 {
   font-family: Shrikhand,"cursive";
+}
+
+header .fa-heart {
+  margin-right: 30px;
+}
+
+article section {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+
+.order-card1 li, 
+.order-card2 li,
+.order-card3 li {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  margin: 0;
+  padding: 0;
+}
+
+.order-card1 li section ,
+.order-card2 li section ,
+.order-card3 li section {
+  line-height: 2px;
+ 
 }
