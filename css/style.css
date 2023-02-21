@@ -30,7 +30,7 @@ form input {
     border: unset;
 }
 
-nav {
+main header {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -40,7 +40,7 @@ nav {
     padding-bottom: 50px;
 }
 
-nav button {
+header button {
     border-radius: 30px;
     border: unset;
     height: 50px;
@@ -178,6 +178,7 @@ footer {
   color: #fff;
   background-color: #3a3838;
   line-height: 1.5rem;
+  padding-left: 20px;
 }
 
 footer h3 {
