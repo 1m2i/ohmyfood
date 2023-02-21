@@ -116,7 +116,6 @@ main ul {
 main li {
   border-radius: 20px;
   background-color: $white;
-  box-shadow:(0, 10px, 6px, dark-gray);
 }
 
 .restaurant-cards {
@@ -128,7 +127,6 @@ main li {
 
 .restaurant-cards ul {
   display: flex;
-  flex-direction: colum;
   justify-content: space-between;
   list-style-type: none;
 }
@@ -159,7 +157,6 @@ figcaption {
   display:flex;
   justify-content: space-between;
   padding: 20px;
-  height-inline: 10px;
 }
 
 figcaption h3,
@@ -202,7 +199,7 @@ footer li {
   list-style-type: none;
   text-decoration: none;
   margin: 0;
-  text: white;
+  color: white;
 } 
 
 footer a {
@@ -219,6 +216,10 @@ a {
   font-size: 2em;
   align-self: center;
   font-weight: unset;  
+}
+
+article header .fa-heart {
+  border: unset;
 }
 
 header.header-menus {
@@ -316,7 +317,7 @@ article section {
   padding-top: 19px;
 }
 
-.menus-cards button {
+.menus-cards .menus-btn {
   border-radius: 30px;
   border: unset;
   height: 50px;
