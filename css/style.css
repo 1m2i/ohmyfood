@@ -181,7 +181,6 @@ footer {
   flex-direction: column;
   color: #fff;
   background-color: #3a3838;
-  padding: 20px;
   line-height: 1.5rem;
 }
 
@@ -209,7 +208,6 @@ footer li {
 footer a {
   color:white;
 }
-
 
 a {
   color: black;
