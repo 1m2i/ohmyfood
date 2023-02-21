@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Accueil - ohmyfood!</title>
-        <link rel="preload" href="style.css" as="style">
+        <link rel="preload" href="css/style.css" as="style">
         <meta name="description"  content="Réserver le Menu qui vous convient">
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -24,45 +24,39 @@
             <i class="fa-solid fa-location-dot"></i>
             <input type="search" placeholder="Paris, Belleville">
         </form>
-
-        <nav>
-            <h1>Réserver le menu qui vous convient</h1>
-            <p>Découvrez les restaurants d'exception, sélectionnés par nos soins</p>
-            <button class="restaurant-search">
-                    <span>Explorer nos restaurants</span>
-            </button>
-        </nav>
-
         <main>
+            <header>
+                <h1>Réserver le menu qui vous convient</h1>
+                <p>Découvrez les restaurants d'exception, sélectionnés par nos soins</p>
+                <a href="#restaurants">
+                    Explorer nos restaurants
+                </a>
+            </header>
+
             <section class="introduction">
                 <h2>Fonctionnement</h2>
                 <ul>
                     <li>
-                        <div class="numbers">
-                            <i class="fa-solid fa-1"></i>
-                        </div>
-                        <div class="icons">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                        </div>
+                        <i class="fa-solid fa-1 numbers"></i>
+                        <i class="fa-solid fa-mobile-screen-button icons"></i>
                         Choisissez un restaurant
                     </li>
 
                     <li> 
                         <div class="numbers">
-                           <i class="fa-solid fa-2"></i>
+                           <i class="fa-solid fa-2 numbers"></i>
                         </div>
-                        <div class="icons">
-                            <i class="fa-solid fa-list-ul"></i>
+                        <div class="">
+                            <i class="fa-solid fa-list-ul icons"></i>
                         </div>
                         Composez votre menu
                     </li>
 
                     <li> 
-                        <div class="numbers">
-                            <i class="fa-solid fa-3"></i>
+                            <i class="fa-solid fa-3 numbers"></i>
                         </div>
                         <div class="icons">
-                            <i class="fa-solid fa-store"></i>
+                            <i class="fa-solid fa-store icons"></i>
                         </div>
                          Déguster au restaurant
                     </li>
@@ -82,9 +76,7 @@
                                     <h3>La palette du goût</h3>
                                     <p>Ménilmontan</p>
                                 </a>
-                                <button>
-                                   <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <i class="fa-solid fa-heart"></i>
                             </figcaption>
                         </figure>
                     </li>
