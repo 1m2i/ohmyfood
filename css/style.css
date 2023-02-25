@@ -36,20 +36,21 @@ main header {
     flex-direction: column;
     text-align: center;
     background-color: #f8f8ff;
-    padding-bottom: 50px;
 }
 
-header a {
+ main header a {
+  align-self: center;
   margin: 20px 0;
   border-radius: 30px;
   padding: 15px 20px;
+  width: 50%;
   color: #fff;
   background: linear-gradient(#ff79da 10%, rgb(147, 86, 220) 100%);
   box-shadow: 0 10px 6px #eeeded;
   cursor: pointer;
 }
 
-header a:hover, .search a:focus {
+main header a:hover, .search a:focus {
   background: linear-gradient(rgba(255, 121, 218, 0.8) 10%, rgba(147, 86, 220, 0.8) 100%);
   box-shadow: 0 10px 6px #c1bdbd;
 }
@@ -216,12 +217,8 @@ a {
 
 .fa-heart{
   font-size: 2em;
-  align-self: center;
-  font-weight: unset;  
-}
-
-article header .fa-heart {
-  border: unset;
+  font-weight: unset;
+  border: unset;  
 }
 
 .header-menus {
@@ -233,13 +230,14 @@ article header .fa-heart {
 }
 
 .header-menus img {
+  height: 40px;
   font-weight: bold;
   margin-block-start: .67em;
   margin-block-end: .67em;
 }
 
 .fa-arrow-left {
-  padding-top: 30px;
+  padding-top: 18px;
   font-size: x-large;
 }
 
@@ -267,10 +265,9 @@ article header .fa-heart {
   padding: 20px 20px 0 20px;
 }
 
-article header {
-  padding: 1rem 2rem 0 1rem;
+.menus-cards article header {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -278,8 +275,19 @@ header h1 {
   font-family: Shrikhand,"cursive";
 }
 
-header .fa-heart {
-  margin-right: 30px;
+article header .fa-heart {
+  align-self: center;
+  cursor: pointer;
+}
+
+article header .fa-heart:hover,
+article header .fa-heart:focus {
+  background-color: rgb(147, 86, 220)
+ 
+}
+
+.fa-circle-check {
+  display: none;
 }
 
 article section {
@@ -308,8 +316,8 @@ article section {
 .order-card3 li section {
   line-height: 0.5px;
   margin-bottom:1px;
- 
 }
+
 .menus-cards h3 {
   margin-bottom: 1px;
 }
@@ -327,12 +335,12 @@ article section {
 }
 
 .menus-cards .menus-btn {
+  justify-content: center;
   border-radius: 30px;
-    border: unset;
-    height: 50px;
-    color: white;
-    width: 50%;
-    align-self: center;
-    cursor: pointer;
-    background-image: linear-gradient(0deg,rgba(147,86,220,.8),rgba(255,121,218,.8));
+  border: unset;
+  height: 50px;
+  color: white;
+  width: 50%;
+  cursor: pointer;
+  background-image: linear-gradient(0deg,rgba(147,86,220,.8),rgba(255,121,218,.8));
 }
