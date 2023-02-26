@@ -109,12 +109,12 @@ main {
 }
 
 main ul {
-    display: flex;
-    flex-direction: Column;
-    list-style-type: none;
-    padding:0;
-    gap: 20px;
-    padding-bottom: 30px;
+  display: flex;
+  flex-direction: Column;
+  list-style-type: none;
+  padding:0;
+  gap: 20px;
+  padding-bottom: 30px;
 }
 
 main li {
@@ -155,6 +155,7 @@ figure {
   border: 1px ;
   border-radius: 20px;
   background: white;
+  width: 100%;
 }
 
 figcaption {
@@ -218,7 +219,8 @@ a {
 .fa-heart{
   font-size: 2em;
   font-weight: unset;
-  border: unset;  
+  border: unset; 
+  padding-right: 20px; 
 }
 
 .header-menus {
@@ -242,14 +244,15 @@ a {
 }
 
 .menus-cards {
-  padding: 0;
-  width: 100%;
+  display: flex;
+  flex-direction: Column;
+  margin-bottom: 40px;
+  background-color: #f6f6f6;
+  widith: 100%;
 }
+
 .menus-cards img {
-  border-radius: unset;
-  padding: 0;
   height: 400px;
-  width: 100%;
 }
 
 .menus-cards header {
@@ -260,9 +263,8 @@ a {
 .menus-cards article {
   margin-top: -5rem;
   border-radius: 40px 40px 0 0;
-  background-color: #f6f6f6;
   position: relative;
-  padding: 20px 20px 0 20px;
+  padding: 20px;
 }
 
 .menus-cards article header {
@@ -290,25 +292,31 @@ article header .fa-heart:focus {
   display: none;
 }
 
-article section {
+.menus-cards article section {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
 }
 
-.order-card1 li, 
-.order-card2 li,
-.order-card3 li {
+.menus-cards article section h2 {
+  margin-bottom: 0;
+}
+
+.menus-cards article section ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menus-cards .order-card1 li, 
+.menus-cards .order-card2 li,
+.menus-cards .order-card3 li {
   display: flex;
   justify-content: space-between;
-  padding-left: 10px;
-  border-radius: 20px;
   background-color: #fff;
   box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
-  margin: 0;
   padding: 0 20px 0 20px;
   line-height: 1.5rem;
-  width: 95%;
 }
 
 .order-card1 li section ,
@@ -325,7 +333,7 @@ article section {
 .order-card1 li  b,
 .order-card2 li  b,
 .order-card3 li b {
-  padding-top: 19px;
+  align-self: self-end;
 }
 
 .order-card1 li  i,
@@ -335,7 +343,7 @@ article section {
 }
 
 .menus-cards .menus-btn {
-  justify-content: center;
+  align-self: center;
   border-radius: 30px;
   border: unset;
   height: 50px;
