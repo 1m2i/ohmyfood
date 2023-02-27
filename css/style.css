@@ -357,9 +357,30 @@ article header .fa-heart:focus {
 }
 
 @media (min-width: 768px) {
-  .menus-cards { 
-    flex-wrap: wrap;
+  .introduction ul { 
+    flex-direction: row;
   }
+
+  .restaurant-cards ul {
+    flex-direction: column;
+  }
+ 
+}
+  
+@media (min-width: 992px ) {
+  .restaurant-cards ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+ 
+  .restaurant-cards li {
+   flex-wrap: wrap;
+    width: 50%;
+    
+  }
+  
+  
 
 }
 
