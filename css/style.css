@@ -88,8 +88,8 @@ main {
     background-color: #f4eefc;
 }
 
-.introduction li:hover .icons i,
-.introduction li:focus .icons i {
+.introduction .icons:hover,
+.introduction .icons:focus  {
     color: rgb(147, 86, 220);
 }
 
@@ -376,8 +376,7 @@ article header .fa-heart:focus {
  
   .restaurant-cards li {
    flex-wrap: wrap;
-    width: 50%;
-    
+    width: 45%; 
   }
   
   
