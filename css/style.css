@@ -36,7 +36,7 @@ main header {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-color: #555;
+  background-color: lightgrey;
 }
 
  main header a {
