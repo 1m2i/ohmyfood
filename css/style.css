@@ -120,7 +120,7 @@ main ul {
 
 main li {
   border-radius: 20px;
-  background-color: $white;
+  background-color: white;
 }
 
 .restaurant-cards {
@@ -378,8 +378,5 @@ article header .fa-heart:focus {
    flex-wrap: wrap;
     width: 45%; 
   }
-  
-  
-
 }
 
