@@ -19,23 +19,24 @@ form {
     display: flex;
     justify-content: center;
     gap: 15px;
-    background-color: #dcdcdc;
+    background-color: #eaeaea;
     height: 50px;
     color: black;
 }
 
 form input {
     font-weight: bold;
-    background-color: #dcdcdc ;
+    background-color: #eaeaea ;
     border: unset;
+    height: 50px;
 }
 
 main header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: #f8f8ff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #555;
 }
 
  main header a {
@@ -59,10 +60,6 @@ main header a:hover, .search a:focus {
     padding-top: 15px;
 }
 
-main {
-    padding-top: 20px;
-}
-
 .introduction {
     display: flex;
     flex-direction: column;
@@ -83,30 +80,30 @@ main {
     box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
 }
 
-.introduction li:hover ,
-.introduction li:focus {
+.introduction li:hover .icons,
+.introduction li:hover .icons {
     background-color: #f4eefc;
 }
 
 .introduction .icons:hover,
 .introduction .icons:focus  {
-    color: rgb(147, 86, 220);
+  color: rgb(147, 86, 220);
 }
 
 .numbers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #9356DC;
-    color: white;
-    width: 1rem;
-    height: 1rem;
-    padding: 10px;
-    border-radius: 50%;
-    position: relative;
-    right: 10px;
-    bottom: 9px;
-    left: -1.0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  color: white;
+  width: 1rem;
+  height: 1rem;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  right: 10px;
+  bottom: 9px;
+  left: -1.0rem;
 }
 
 main ul {
@@ -153,10 +150,19 @@ main li {
 }
   
 figure {
+  position:relative;
   border: 1px ;
   border-radius: 20px;
   background: white;
   width: 100%;
+}
+
+figcaption > p{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border:2px solid;
+  background :lightgreen;
 }
 
 figcaption {
