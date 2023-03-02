@@ -142,6 +142,7 @@ main li {
   flex-direction: column;
   padding: 20px;
   background-color: #f5f5f5;
+  scroll-behavior: smooth;
 }
 
 .restaurant-cards ul {
@@ -325,6 +326,9 @@ article header .fa-heart:focus {
   width: 100%;
 }
 
+.menus-cards h2 {
+  font-weight: unset;
+}
 .menus-cards article section h2 {
   margin-bottom: 0;
 }
