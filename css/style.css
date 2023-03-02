@@ -18,7 +18,7 @@ header {
 form {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     background-color: #eaeaea;
     height: 50px;
     color: black;
