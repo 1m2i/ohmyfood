@@ -12,17 +12,17 @@ header {
   display: flex;
   justify-content : center;
   color: black;
+  padding: 20px 0 20px 0;
 }
 
 header img {
-  width:60%;
+  width:50%;
 }
-
 
 form {
   display: flex;
   justify-content: center;
-  background-color: #eaeaea;
+  background-color: #EDEDED;
   height: 60px;
   color: black;
 }
@@ -30,7 +30,7 @@ form {
 form input {
   font-weight: bold;
   font-size: large;
-  background-color: #eaeaea ;
+  background-color: #EDEDED ;
   border: unset;
   text-align: center;
   width: 30%;
@@ -41,9 +41,16 @@ main header {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: #F7F7F7;
 }
 
+h1 {
+  font-size: 1.7em;
+}
+
+main header P {
+  margin: 0 30px 0 30px;
+}
 
  main header a {
   align-self: center;
@@ -64,7 +71,8 @@ main header a:hover, .search a:focus {
 
 .fa-location-dot {
   align-self: center;
-  font-size: large;
+  font-size: medium;
+  margin-bottom: 5px;
 }
 
 .introduction {
@@ -72,7 +80,7 @@ main header a:hover, .search a:focus {
   flex-direction: column;
   padding: 30px;
   gap: 30px;
-  background-color:white;
+  background-color: #FFFFFF;
 }
 
 .introduction li {
@@ -237,6 +245,10 @@ a {
   font-weight: unset;
   border: unset; 
   padding-right: 20px; 
+}
+
+figcaption .fa-heart {
+  cursor: pointer;
 }
 
 .header-menus {
