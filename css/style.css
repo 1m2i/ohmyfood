@@ -252,7 +252,7 @@ figcaption .far.fa-heart {
 
 figcaption .fas.fa-heart {
   color: transparent;
-  transition: all 350ms;
+  transition: all 550ms;
   padding: 0px;
   font-size: 2em;
   border: unset; 
@@ -316,17 +316,22 @@ figcaption .fas.fa-heart:focus {
 }
 
 .menus-cards article header {
-  position:relative;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: unset;
 }
 
-article .far.fa-heart,
-article .fas.fa-heart, {
-  align-self: center;
-  cursor: pointer;
+article header .far.fa-heart {
+position: absolute;
+font-size: 2em;
+border: unset; 
+right: 20px; 
+}
+
+article header .fas.fa-heart {
+  color: transparent;
   position: absolute;
   font-size: 2em;
   border: unset; 
