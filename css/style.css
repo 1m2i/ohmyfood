@@ -243,15 +243,31 @@ a {
   list-style-type: none;
 }
 
-.fa-heart {
-  font-size: 1.8em;
-  font-weight: unset;
+figcaption .far.fa-heart {
+  position: absolute;
+  font-size: 2em;
   border: unset; 
-  padding-right: 20px; 
+  right: 20px; 
 }
 
-figcaption .fa-heart {
+figcaption .fas.fa-heart {
+  color: transparent;
+  transition: all 350ms;
+  padding: 0px;
+  font-size: 2em;
+  border: unset; 
+}
+
+figcaption .far.fa-heart,
+figcaption .fas.fa-heart, {
   cursor: pointer;
+}
+
+figcaption .far.fa-heart:hover,
+figcaption .far.fa-heart:focus,
+figcaption .fas.fa-heart:hover,
+figcaption .fas.fa-heart:focus {
+  color: rgb(147, 86, 220)
 }
 
 .header-menus {
@@ -300,24 +316,37 @@ figcaption .fa-heart {
 }
 
 .menus-cards article header {
+  position:relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: unset;
 }
 
-article header .fa-heart {
+article .far.fa-heart,
+article .fas.fa-heart, {
   align-self: center;
   cursor: pointer;
+  position: absolute;
+  font-size: 2em;
+  border: unset; 
+  right: 20px; 
 }
+
 
 article header .fa-heart:hover,
 article header .fa-heart:focus {
   color: rgb(147, 86, 220)
 }
 
-.fa-circle-check {
-  display: none;
+
+.fa-circle-check:hover {
+  flex: 5%;
+  transform: translateX(1px);
+  background-color: #99e2d0;
+  cursor: pointer;
+  color: #99e2d0;
+  padding: 25px;
 }
 
 .menus-cards article section {
@@ -329,6 +358,17 @@ article header .fa-heart:focus {
 .menus-cards h2 {
   font-weight: unset;
 }
+
+.underline-h2 {
+  width: 40px;
+  height: 0.25em;
+  background-color: #99e2d0;
+  margin: 0;
+  margin-left: 0px;
+  padding: 0;
+  margin-left:1px;
+}
+
 .menus-cards article section h2 {
   margin-bottom: 0;
 }
@@ -364,13 +404,14 @@ article header .fa-heart:focus {
 .order-card1 li  b,
 .order-card2 li  b,
 .order-card3 li b {
-  align-self: self-end;
+  align-self: center;
+  margin-top: 20px;
 }
 
 .order-card1 li i,
 .order-card2 li i,
 .order-card3 li i {
-  align-self: self-end;
+  align-self: center;
 }
 
 .menus-cards .menus-btn {
