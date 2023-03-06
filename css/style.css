@@ -248,26 +248,32 @@ figcaption .far.fa-heart {
   font-size: 2em;
   border: unset; 
   right: 20px; 
+  padding-top: 5px;
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 3s;
 }
 
 figcaption .fas.fa-heart {
   color: transparent;
-  transition: all 550ms;
-  padding: 0px;
+  position: absolute;
   font-size: 2em;
   border: unset; 
-}
-
-figcaption .far.fa-heart,
-figcaption .fas.fa-heart, {
+  right: 20px; 
+  padding-top: 5px;
   cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 3s;
 }
 
 figcaption .far.fa-heart:hover,
 figcaption .far.fa-heart:focus,
 figcaption .fas.fa-heart:hover,
 figcaption .fas.fa-heart:focus {
-  color: rgb(147, 86, 220)
+  color: rgb(147, 86, 220);
+  transform: scale(1.15);
 }
 
 .header-menus {
@@ -324,10 +330,11 @@ figcaption .fas.fa-heart:focus {
 }
 
 article header .far.fa-heart {
-position: absolute;
-font-size: 2em;
-border: unset; 
-right: 20px; 
+  position: absolute;
+  font-size: 2em;
+  border: unset; 
+  right: 20px; 
+  padding-top: 15px;
 }
 
 article header .fas.fa-heart {
@@ -336,6 +343,7 @@ article header .fas.fa-heart {
   font-size: 2em;
   border: unset; 
   right: 20px; 
+  padding-top: 15px;
 }
 
 
@@ -428,7 +436,9 @@ article header .fa-heart:focus {
   width: 50%;
   cursor: pointer;
   background-image: linear-gradient(0deg,rgba(147,86,220,.8),rgba(255,121,218,.8));
+  box-shadow: 8px 8px 2px #acabab;
 }
+
 
 @media (min-width: 768px) {
   .introduction ul { 
@@ -452,5 +462,55 @@ article header .fa-heart:focus {
    flex-wrap: wrap;
     width: 45%; 
   }
+
+  figcaption .far.fa-heart {
+    position: absolute;
+    font-size: 2em;
+    border: unset; 
+    right: 20px; 
+    padding-top: 15px;
+    cursor: pointer;
+  }
+  
+  figcaption .fas.fa-heart {
+    color: transparent;
+    position: absolute;
+    font-size: 2em;
+    border: unset; 
+    right: 20px; 
+    padding-top: 15px;
+    cursor: pointer;
+  }
+  
+  figcaption .far.fa-heart:hover,
+  figcaption .far.fa-heart:focus,
+  figcaption .fas.fa-heart:hover,
+  figcaption .fas.fa-heart:focus {
+    color: rgb(147, 86, 220)
+  }
+  
+  article header .far.fa-heart {
+    position: absolute;
+    font-size: 2em;
+    border: unset; 
+    right: 20px; 
+    padding-top: 15px;
+  }
+  
+  article header .fas.fa-heart {
+    color: transparent;
+    position: absolute;
+    font-size: 2em;
+    border: unset; 
+    right: 20px; 
+    padding-top: 15px;
+  }
+  
+  
+  article header .fa-heart:hover,
+  article header .fa-heart:focus {
+    color: rgb(147, 86, 220)
+  }
+  
 }
 
