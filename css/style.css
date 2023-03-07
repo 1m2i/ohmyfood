@@ -2,7 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 body {
-  font-style: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   max-width: 1400px;
   margin: auto;
   padding: 0;
@@ -13,6 +13,7 @@ header {
   justify-content : center;
   color: black;
   padding: 20px 0 20px 0;
+  box-shadow: 0px 5px 5px lightgrey;
 }
 
 header img {
@@ -33,7 +34,7 @@ form input {
   background-color: #EDEDED ;
   border: unset;
   text-align: center;
-  width: 30%;
+  
 }
 
 main header {
@@ -150,7 +151,7 @@ main li {
   justify-content: space-between;
   list-style-type: none;
 }
-  
+
 .restaurant-cards figure {
   width: 100%;
   height: 320px;
@@ -161,12 +162,12 @@ main li {
   background-color: white;
   text-decoration: none;
 }
-  
+
 .restaurant-cards img {
   width: 100%;
   height: 230px;
 }
-  
+
 figure {
   position:relative;
   border: 1px ;
@@ -302,7 +303,7 @@ figcaption .fas.fa-heart:focus {
 }
 
 .menus-cards img {
-  height: 400px;
+  height: 300px;
   border-radius: unset;
   background-color: unset;
   width: 100%;
@@ -327,6 +328,7 @@ figcaption .fas.fa-heart:focus {
   flex-direction: row;
   justify-content: space-between;
   background-color: unset;
+  font-family: shrikhand, cursive;
 }
 
 article header .far.fa-heart {
@@ -335,6 +337,7 @@ article header .far.fa-heart {
   border: unset; 
   right: 20px; 
   padding-top: 15px;
+  transform: scale(1);
 }
 
 article header .fas.fa-heart {
@@ -344,23 +347,31 @@ article header .fas.fa-heart {
   border: unset; 
   right: 20px; 
   padding-top: 15px;
+  transform: scale(1);
 }
-
 
 article header .fa-heart:hover,
 article header .fa-heart:focus {
-  color: rgb(147, 86, 220)
+  color: rgb(147, 86, 220);
+  transition: all 350ms;
 }
 
+.fa-circle-check{
+  flex: 3%;
+  border-radius: 20px;
+  padding: 0 20px 20px 0;
+  color: white;
+  margin-right: -3rem;
+  overflow: hidden;
+}
 
 .fa-circle-check:hover {
-  flex: 5%;
-  transform: translateX(1px);
+  transform: translateX(1.5px);
   background-color: #99e2d0;
   cursor: pointer;
-  color: #99e2d0;
-  padding: 25px;
+  padding: 20px;
 }
+
 
 .menus-cards article section {
   display: flex;
@@ -373,7 +384,7 @@ article header .fa-heart:focus {
 }
 
 .underline-h2 {
-  width: 40px;
+  width: 65px;
   height: 0.25em;
   background-color: #99e2d0;
   margin: 0;
@@ -383,6 +394,7 @@ article header .fa-heart:focus {
 }
 
 .menus-cards article section h2 {
+  text-transform: uppercase;
   margin-bottom: 0;
 }
 
@@ -401,7 +413,23 @@ article header .fa-heart:focus {
   box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
   padding: 0 20px 0 20px;
   line-height: 1.5rem;
+  animation: myAnim 3s ease 1s 1 normal forwards;
 }
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: rotateX(-100deg);
+    transform-origin: top;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
+}
+
 
 .order-card1 li section ,
 .order-card2 li section ,
@@ -438,7 +466,6 @@ article header .fa-heart:focus {
   background-image: linear-gradient(0deg,rgba(147,86,220,.8),rgba(255,121,218,.8));
   box-shadow: 8px 8px 2px #acabab;
 }
-
 
 @media (min-width: 768px) {
   .introduction ul { 
@@ -505,7 +532,6 @@ article header .fa-heart:focus {
     right: 20px; 
     padding-top: 15px;
   }
-  
   
   article header .fa-heart:hover,
   article header .fa-heart:focus {
