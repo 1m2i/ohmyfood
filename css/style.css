@@ -252,7 +252,6 @@ figcaption .fas.fa-heart {
   right: 20px; 
   padding-top: 5px;
   cursor: pointer;
- 
 }
 
 figcaption .fas.fa-heart {
@@ -264,18 +263,7 @@ figcaption .far.fa-heart:focus,
 figcaption .fas.fa-heart:hover,
 figcaption .fas.fa-heart:focus {
   color: rgb(147, 86, 220);
-  animation: myAnim 3s ease 0s 1 normal forwards;
-  @keyframes myAnim {
-    0% {
-      background-position: center top;
-      background-size: 100%;
-    }
-  
-    100% {
-      background-position: center top;
-      background-size: 150%;
-    }
-  }
+
 }
 
 .header-menus {
@@ -342,41 +330,28 @@ article header .far.fa-heart {
   position: absolute;
   font-size: 2em;
   border: unset; 
-  right: 20px; 
+  right: 27px; 
   cursor: pointer;
   padding-top: 15px;
+  overflow: hidden !important;
 }
 
 article header .fa-heart:hover,
 article header .fa-heart:focus {
   color: rgb(147, 86, 220);
-  animation: myAnim 3s ease 0s 1 normal forwards;
-  @keyframes myAnim {
-    0% {
-      background-position: center top;
-      background-size: 100%;
-    }
-  
-    100% {
-      background-position: center top;
-      background-size: 150%;
-    }
-  }
 }
 
 .fa-circle-check{
-  flex: 10%;
+  flex: 4.9%;
   font-size: xx-large;
-  border-radius: 0 20px 20px 0;
-  padding: 10px 20px 5px 1px;
+  border-radius: 2px 20px 20px 2px;
   color: white;
-  margin-right: -2rem;
-  overflow: hidden;
-  height: 20px;
+  margin-right: -1.3rem;
+
+
 }
 
 .fa-circle-check:hover {
-  transform: translateX(3px);
   background-color: #99e2d0;
   cursor: pointer;
   padding: 20px;
