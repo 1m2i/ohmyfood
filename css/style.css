@@ -190,6 +190,7 @@ figcaption {
   display:flex;
   justify-content: space-between;
   padding: 20px;
+  text-overflow: ellipsis;
 }
 
 figcaption h3,
@@ -318,6 +319,8 @@ figcaption .fas.fa-heart:focus {
   justify-content: space-between;
   background-color: unset;
   font-family: shrikhand, cursive;
+  box-shadow: unset;
+
 }
 
 article header .fas.fa-heart {
@@ -334,6 +337,8 @@ article header .far.fa-heart {
   cursor: pointer;
   padding-top: 15px;
   overflow: hidden !important;
+  -webkit-background-clip: text;
+  transition-duration: 3s; 
 }
 
 article header .fa-heart:hover,
@@ -341,21 +346,28 @@ article header .fa-heart:focus {
   color: rgb(147, 86, 220);
 }
 
+
 .fa-circle-check{
-  flex: 4.9%;
+  flex: 6%;
   font-size: xx-large;
   border-radius: 2px 20px 20px 2px;
   color: white;
   margin-right: -1.3rem;
-
-
+  overflow: hidden;
+  cursor: pointer;
+  transition:.4s ease-in-out;
+  padding-left: 10px;
 }
+
 
 .fa-circle-check:hover {
   background-color: #99e2d0;
   cursor: pointer;
   padding: 20px;
+  rotate: 360deg;
 }
+
+
 
 .menus-cards article section {
   display: flex;
@@ -386,6 +398,9 @@ article header .fa-heart:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   animation: myAnim 3s ease 1s 1 normal forwards;
 }
 
@@ -397,7 +412,10 @@ article header .fa-heart:focus {
   background-color: #fff;
   box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
   padding: 0 20px 0 20px;
-  line-height: 1.5rem;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @keyframes myAnim {
@@ -414,23 +432,29 @@ article header .fa-heart:focus {
   }
 }
 
-.order-card1 li section ,
-.order-card2 li section ,
+.order-card1 li section,
+.order-card2 li section,
 .order-card3 li section {
-  line-height: 0.5px;
-  margin-bottom: 1px;
+  line-height: 1px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menus-cards h3 {
-  margin-bottom: 5px;
   font-weight: 900;
+  line-height: 1px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+ overflow: nowrap;
 }
 
 .order-card1 li  b,
 .order-card2 li  b,
 .order-card3 li b {
   align-self: center;
-  margin-top: 20px;
+  margin-top: 30px;
+  
 }
 
 .order-card1 li i,
