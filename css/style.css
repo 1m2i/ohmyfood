@@ -257,6 +257,9 @@ figcaption .fas.fa-heart {
 
 figcaption .fas.fa-heart {
   color: transparent;
+  overflow: hidden !important;
+  -webkit-background-clip: text;
+  transition-duration: 3s; 
 }
 
 figcaption .far.fa-heart:hover,
@@ -350,24 +353,23 @@ article header .fa-heart:focus {
 .fa-circle-check{
   flex: 6%;
   font-size: xx-large;
-  border-radius: 2px 20px 20px 2px;
+  border-radius: 0px 20px 20px 0px;
   color: white;
   margin-right: -1.3rem;
   overflow: hidden;
   cursor: pointer;
-  transition:.4s ease-in-out;
+  rotate: 50deg;
   padding-left: 10px;
 }
-
 
 .fa-circle-check:hover {
   background-color: #99e2d0;
   cursor: pointer;
-  padding: 20px;
+  padding: 20px 40px 20px 20px;
   rotate: 360deg;
+  transition: 1.5s ease-in;
+ 
 }
-
-
 
 .menus-cards article section {
   display: flex;
@@ -398,9 +400,6 @@ article header .fa-heart:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   animation: myAnim 3s ease 1s 1 normal forwards;
 }
 
@@ -418,10 +417,74 @@ article header .fa-heart:focus {
   white-space: nowrap;
 }
 
+
+.spinner {
+  place-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 300ms 5s forwards;
+  transform-origin: center;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.spinner_wrapper {
+  display: flex;
+  width: 200px;
+  height: 100px;
+  left: 50%;
+  right: 50%;
+}
+
+.circle {
+  display: inline-block;
+  background-color: purple;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  transform: scale(0);  
+  animation: grow 2s linear infinite;
+  margin: -10px;
+}
+
+.circle:nth-child(2) {
+  background-color: violet;
+  animation-delay: 0.4s;
+}
+
+.circle:nth-child(3) {
+  background-color: pink;
+  animation-delay: 0.2s;
+}
+
+.circle:nth-child(4) {
+  background-color: turquoise;
+  animation-delay: 0.2s;
+}
+
+@keyframes grow {
+  50% {
+      transform: scale(1);
+  }
+}
+
+@keyframes disappear {
+  to {
+      transform: scale(0);
+  }
+}
+
+
 @keyframes myAnim {
   0% {
     opacity: 0;
-    transform: rotateX(-50deg);
+    transform: rotateX(-150deg);
     transform-origin: top;
   }
 
@@ -437,23 +500,20 @@ article header .fa-heart:focus {
 .order-card3 li section {
   line-height: 1px;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .menus-cards h3 {
   font-weight: 900;
   line-height: 1px;
-  text-overflow: ellipsis;
-  overflow: hidden;
- overflow: nowrap;
 }
 
 .order-card1 li  b,
 .order-card2 li  b,
 .order-card3 li b {
   align-self: center;
-  margin-top: 30px;
+  margin-top: 37px;
   
 }
 
