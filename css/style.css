@@ -254,7 +254,6 @@ figcaption .fas.fa-heart {
 figcaption .fas.fa-heart {
   color: transparent;
   overflow: hidden !important;
-  -webkit-background-clip: text;
   transition-duration: 3s; 
 }
 
@@ -333,7 +332,6 @@ article header .far.fa-heart {
   cursor: pointer;
   padding-top: 15px;
   overflow: hidden !important;
-  -webkit-background-clip: text;
   transition-duration: 3s; 
 }
 
