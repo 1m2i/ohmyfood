@@ -22,7 +22,7 @@ form {
   background-color: #EDEDED;
   height: 60px;
   color: black;
-  padding-left: 110px;
+  padding-left: 100px;
 }
 
 form input {
@@ -70,7 +70,7 @@ main header a:hover, .search a:focus {
   align-self: center;
   font-size: medium;
   margin-bottom: 5px;
-  margin-right: 5px;
+  margin-right: 4px;
 }
 
 .introduction {
