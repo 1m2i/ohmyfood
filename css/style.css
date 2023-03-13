@@ -350,7 +350,6 @@ article header .fa-heart:focus {
   margin-right: -1.3rem;
   overflow: hidden;
   cursor: pointer;
-  rotate: 50deg;
   padding-left: 10px;
 }
 
@@ -358,9 +357,8 @@ article header .fa-heart:focus {
   background-color: #99e2d0;
   cursor: pointer;
   padding: 20px 40px 20px 20px;
-  rotate: 360deg;
   transition: 1s ease-in;
- 
+  rotate: 360deg;
 }
 
 .menus-cards article section {
