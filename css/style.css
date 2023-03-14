@@ -1,6 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+:root {
+  --grey: #EDEDED;
+}
+
+@keyframes grow {
+  50% {
+      transform: scale(1);
+  }
+}
+
+@keyframes disappear {
+  to {
+      transform: scale(0);
+  }
+}
+
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: rotateX(-150deg);
+    transform-origin: top;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+      transform: translateY(1000px);
+      opacity: 0;
+  }
+
+  70% {
+      opacity: 0.5;
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
   max-width: 1400px;
@@ -13,13 +56,13 @@ header {
   justify-content : center;
   color: black;
   padding: 20px 0 20px 0;
-  box-shadow: 0px 5px 5px lightgrey;
+  box-shadow: 0 5px 5px lightgrey;
 }
 
 form {
   display: flex;
   justify-content: center;
-  background-color: #EDEDED;
+  background-color: var(--grey);
   height: 60px;
   color: black;
   padding-left: 100px;
@@ -266,8 +309,9 @@ figcaption .fas.fa-heart:focus {
 
 .header-menus {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 50px;
   padding: 20px;
 }
 
@@ -345,18 +389,29 @@ article header .fa-heart:focus {
   font-size: xx-large;
   border-radius: 0px 20px 20px 0px;
   color: white;
-  margin-right: -1.3rem;
-  overflow: hidden;
   cursor: pointer;
   padding-left: 10px;
 }
 
-.fa-circle-check:hover {
-  background-color: #99e2d0;
+
+li:hover .fa-circle-check,
+li:focus .fa-circle-check  {
   cursor: pointer;
   padding: 20px 40px 20px 20px;
-  transition: 1s ease-in;
-  rotate: 360deg;
+  transition: 1s ease-in transform;
+  transform: rotate(360deg);
+}
+
+section div {
+  transform: translateX();
+  background-color: #99e2d0;
+  overflow: hidden;
+}
+
+li:hover section div,
+li:focus section div {
+  transform: translate(0);
+  transition: 1s ease-in transform;
 }
 
 .menus-cards article section {
@@ -455,31 +510,8 @@ article header .fa-heart:focus {
   animation-delay: 2s;
 }
 
-@keyframes grow {
-  50% {
-      transform: scale(1);
-  }
-}
-
-@keyframes disappear {
-  to {
-      transform: scale(0);
-  }
-}
-
-
-@keyframes myAnim {
-  0% {
-    opacity: 0;
-    transform: rotateX(-150deg);
-    transform-origin: top;
-  }
-
-  100% {
-    opacity: 1;
-    transform: rotateX(0deg);
-    transform-origin: top;
-  }
+.order-card1 li {
+  animation: slide-in-top 3s ease ;
 }
 
 .order-card1 li section {
@@ -487,8 +519,10 @@ article header .fa-heart:focus {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  animation: slide-in-top 5s ease 0s 1 normal none;
+}
 
+.order-card2 li {
+  animation: slide-in-top 3s ease 500ms ;
 }
 
 .order-card2 li section {
@@ -496,7 +530,10 @@ article header .fa-heart:focus {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  animation: slide-in-top 4s ease 0s 2 normal none; 
+}
+
+.order-card3 li {
+  animation: slide-in-top 3s ease 1s  ;
 }
 
 .order-card3 li section {
@@ -504,20 +541,7 @@ article header .fa-heart:focus {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  animation: slide-in-top 3s ease 0s 3 normal none; 
 }
-
-@keyframes slide-in-top {
-  0% {
-      transform: translateY(1000px);
-      opacity: 0;
-  }
-  100% {
-      transform: translateY(0);
-      opacity: 1;
-  }
-}
-
 
 .order-card1 li  b,
 .order-card2 li  b,
