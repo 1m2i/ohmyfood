@@ -521,8 +521,7 @@ li:focus section div {
   white-space: nowrap;
 }
 
-.order-card1 li section {
-  line-height: 1px;
+.order-card1 li section p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -532,8 +531,7 @@ li:focus section div {
   animation: slide-in-top 3s ease 500ms ;
 }
 
-.order-card2 li section {
-  line-height: 1px;
+.order-card2 li section p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -543,18 +541,29 @@ li:focus section div {
   animation: slide-in-top 3s ease 1s  ;
 }
 
-.order-card3 li section {
-  line-height: 1px;
+.order-card3 li section p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.order-card1 li  h3 ,
+.order-card2 li  h3 ,
+.order-card3 li h3  {
+  margin-bottom: 0;
+}
+
+.order-card1 li  p ,
+.order-card2 li  p ,
+.order-card3 li  p {
+  margin-top: 0;
 }
 
 .order-card1 li  b,
 .order-card2 li  b,
 .order-card3 li b {
   align-self: center;
-  margin-top: 37px;
+  margin-top: 30px;
   padding-right: 40px;
   
 }
