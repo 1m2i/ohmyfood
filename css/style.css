@@ -399,14 +399,13 @@ article header .fa-heart:focus {
 .fa-circle-check{
   color: white;
   font-size: xx-large;
-  
 }
 
 li:hover .fa-circle-check,
 li:focus .fa-circle-check  {
   cursor: pointer;
   padding: 20px 70px 20px 30px;
-  rotate: 360deg;
+ 
 }
 
 section div {
@@ -529,6 +528,9 @@ li:focus section div {
 
 .order-card2 li {
   animation: slide-in-top 3s ease 500ms ;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .order-card2 li section p {
@@ -539,6 +541,9 @@ li:focus section div {
 
 .order-card3 li {
   animation: slide-in-top 3s ease 1s  ;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .order-card3 li section p {
@@ -551,6 +556,9 @@ li:focus section div {
 .order-card2 li  h3 ,
 .order-card3 li h3  {
   margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .order-card1 li  p ,
@@ -587,6 +595,11 @@ li:focus section div {
 }
 
 @media (min-width: 768px) {
+  .header-menus img {
+    font-weight: bold;
+    width: 40%;
+  }
+  
   .introduction ul { 
     flex-direction: row;
   }
@@ -598,6 +611,10 @@ li:focus section div {
 }
   
 @media (min-width: 992px ) {
+  .header-menus img {
+    font-weight: bold;
+    width: 40%;
+  }
   .restaurant-cards ul {
     flex-direction: row;
     flex-wrap: wrap;
