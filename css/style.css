@@ -44,6 +44,18 @@
   }
 }
 
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+}
+
 body {
   font-family: "Roboto", sans-serif;
   max-width: 1400px;
@@ -385,33 +397,27 @@ article header .fa-heart:focus {
 }
 
 .fa-circle-check{
-  flex: 3%;
-  font-size: xx-large;
-  border-radius: 0px 20px 20px 0px;
   color: white;
-  cursor: pointer;
-  padding-left: 10px;
+  font-size: xx-large;
+  
 }
-
 
 li:hover .fa-circle-check,
 li:focus .fa-circle-check  {
   cursor: pointer;
-  padding: 20px 40px 20px 20px;
-  transition: 1s ease-in transform;
-  transform: rotate(360deg);
+  padding: 20px 70px 20px 30px;
+  rotate: 360deg;
 }
 
 section div {
-  transform: translateX();
   background-color: #99e2d0;
-  overflow: hidden;
+  margin-right: -60px;
+  
 }
 
 li:hover section div,
 li:focus section div {
-  transform: translate(0);
-  transition: 1s ease-in transform;
+  
 }
 
 .menus-cards article section {
@@ -443,6 +449,7 @@ li:focus section div {
   display: flex;
   flex-direction: column;
   width: 100%;
+ 
 }
 
 .menus-cards .order-card1 li,
@@ -454,9 +461,6 @@ li:focus section div {
   box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
   padding: 0 20px 0 20px;
   line-height: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .spinner {
@@ -512,6 +516,9 @@ li:focus section div {
 
 .order-card1 li {
   animation: slide-in-top 3s ease ;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .order-card1 li section {
@@ -548,7 +555,7 @@ li:focus section div {
 .order-card3 li b {
   align-self: center;
   margin-top: 37px;
-  padding-right: 20px;
+  padding-right: 40px;
   
 }
 
