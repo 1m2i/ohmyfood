@@ -18,21 +18,6 @@
   }
 }
 
-
-@keyframes myAnim {
-  0% {
-    opacity: 0;
-    transform: rotateX(-150deg);
-    transform-origin: top;
-  }
-
-  100% {
-    opacity: 1;
-    transform: rotateX(0deg);
-    transform-origin: top;
-  }
-}
-
 @keyframes slide-in-top {
   0% {
       transform: translateY(1000px);
@@ -44,17 +29,7 @@
   }
 }
 
-@keyframes myAnim {
-	0% {
-		opacity: 1;
-		transform: translateX(0);
-	}
 
-	100% {
-		opacity: 0;
-		transform: translateX(-250px);
-	}
-}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -399,24 +374,25 @@ article header .fa-heart:focus {
 .fa-circle-check{
   color: white;
   font-size: xx-large;
+  
 }
 
 li:hover .fa-circle-check,
 li:focus .fa-circle-check  {
   cursor: pointer;
   padding: 20px 70px 20px 30px;
- 
+
 }
 
 section div {
   background-color: #99e2d0;
   margin-right: -60px;
-  
+
 }
 
-li:hover section div,
-li:focus section div {
-  
+section div:hover .fa-circle-check,
+section div:focus .fa-circle-check {
+ 
 }
 
 .menus-cards article section {
@@ -447,8 +423,7 @@ li:focus section div {
 .menus-cards article section ul {
   display: flex;
   flex-direction: column;
-  width: 100%;
- 
+  width: 100%; 
 }
 
 .menus-cards .order-card1 li,
