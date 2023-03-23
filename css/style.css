@@ -378,20 +378,19 @@ article header .fa-heart:focus {
 }
 
 .fa-circle-check{
+  flex: 3%;
   color: var(--white);
   font-size: xx-large;
   text-align: center;
-  transform: translateX(100px);
   cursor: pointer;
-  transition: all 900ms;
+
 }
 
 li:hover .fa-circle-check,
 li:focus .fa-circle-check  {
   padding: 20px 70px 20px 30px;
-  transform: translateX(0);
+  
 }
-
 
 section div {
   background-color: var(--light-green);
