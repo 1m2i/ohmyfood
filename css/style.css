@@ -378,23 +378,28 @@ article header .fa-heart:focus {
 }
 
 .fa-circle-check{
-  flex: 3%;
   color: var(--white);
   font-size: xx-large;
-  text-align: center;
   cursor: pointer;
-
+  border-radius: 20px;
+  transition: transform 2s;
 }
 
 li:hover .fa-circle-check,
 li:focus .fa-circle-check  {
   padding: 20px 70px 20px 30px;
-  
+  transform: rotate(360deg);
 }
 
 section div {
+  display: flex;
+  width: 100px;
   background-color: var(--light-green);
-  margin-right: -60px;
+  margin-right:-110px;
+}
+
+section div:hover {
+  margin-right: 110px;
 }
 
 .menus-cards article section {
