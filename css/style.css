@@ -378,25 +378,38 @@ article header .fa-heart:focus {
 }
 
 .fa-circle-check{
+  display-flex;
   color: var(--white);
   font-size: xx-large;
   text-align: center;
-  transform: translateX(100px);
-  cursor: pointer;
-  transition: all 900ms;
+  height: 1.6rem;
+  width: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  transform: rotate(180deg);
+  transition-duration: .5s;
 }
 
 li:hover .fa-circle-check,
 li:focus .fa-circle-check  {
-  padding: 20px 70px 20px 30px;
-  transform: translateX(0);
+  transform: rotate(0);
 }
 
 
 li div {
   display: flex;
   background-color: var(--light-green);
-  margin-right: -60px;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .5s;
+}
+
+li:hover div ,
+li:focus div {
+  margin-right: -1rem;
 }
 
 .menus-cards article section {
@@ -437,7 +450,7 @@ li div {
   justify-content: space-between;
   background-color: var(--white);
   box-shadow: 2px 2px 2px lightgrey;
-  padding: 0 20px 0 20px;
+  padding: 20px;
   line-height: normal;
   border-radius: 20px 20px;
   height: fit-content;
@@ -499,87 +512,126 @@ li div {
 }
 
 .order-card1 li {
-  display:flex;
-  flex-direction: row;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
   animation: slide-in-top 3s ease ;
+  max-width: 100%;
+}
+
+.order-card1 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.order-card1 li section h3 {
+  margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .order-card1 li section p {
+  margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
+.order-card1 li price b {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
 .order-card2 li {
-  animation: slide-in-top 3s ease 500ms ;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease ;
+  max-width: 100%;
+}
+
+.order-card2 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.order-card2 li section h3 {
+  margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .order-card2 li section p {
+  margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
+.order-card2 li price b {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
 .order-card3 li {
-  animation: slide-in-top 3s ease 1s  ;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease ;
+  max-width: 100%;
+}
+
+.order-card3 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.order-card3 li section h3 {
+  margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .order-card3 li section p {
+  margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.order-card1 li  h3 ,
-.order-card2 li  h3 ,
-.order-card3 li h3  {
-  display: flex;
-  flex: 100%;
-  margin-bottom: 0;
-  overflow: hidden;
-  white-space: wrap;
-  text-overflow: ellipsis;
-}
-
-.order-card1 li  p ,
-.order-card2 li  p ,
-.order-card3 li  p {
-  display:flex;
-  flex: 100%;
-  margin-top: 0;
-  overflow: hidden;
-  white-space: wrap;
-  text-overflow: ellipsis;
-}
-
-.order-card1 li  b,
-.order-card2 li  b,
 .order-card3 li b {
+  font-weight: 700;
   display: flex;
-  flex: 100%;
-  align-self: center;
-  margin-top: 30px;
-  padding: 0 20px 0 20px;
-  overflow: hidden;
-  white-space: nowrap;
-  right: 60px;
-}
-
-.order-card1 li i,
-.order-card2 li i,
-.order-card3 li i {
-  align-self: center;
-  overflow: hidden;
-  white-space: nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 2rem;
+  margin-top: 20px;
 }
 
 .menus-cards .menus-btn {
