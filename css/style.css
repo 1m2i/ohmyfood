@@ -435,10 +435,16 @@ li div {
 .menus-cards .order-card3 li {
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
-  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  background-color: var(--white);
+  box-shadow: 2px 2px 2px lightgrey;
   padding: 0 20px 0 20px;
   line-height: normal;
+  border-radius: 20px 20px;
+  height: fit-content;
+  margin: 1rem;
+  flex-direction: row;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .spinner {
@@ -493,6 +499,8 @@ li div {
 }
 
 .order-card1 li {
+  display:flex;
+  flex-direction: row;
   animation: slide-in-top 3s ease ;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -563,6 +571,7 @@ li div {
   padding: 0 20px 0 20px;
   overflow: hidden;
   white-space: nowrap;
+  right: 60px;
 }
 
 .order-card1 li i,
