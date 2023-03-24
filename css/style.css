@@ -378,28 +378,30 @@ article header .fa-heart:focus {
 }
 
 .fa-circle-check{
+  display:flex;
   color: var(--white);
   font-size: xx-large;
-  cursor: pointer;
-  border-radius: 20px;
-  transition: transform 2s;
 }
 
 li:hover .fa-circle-check,
 li:focus .fa-circle-check  {
-  padding: 20px 70px 20px 30px;
-  transform: rotate(360deg);
+  
+  
 }
 
 section div {
   display: flex;
-  width: 100px;
   background-color: var(--light-green);
-  margin-right:-110px;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5px;
+  padding: 20px;
 }
 
 section div:hover {
-  margin-right: 110px;
+  
 }
 
 .menus-cards article section {
@@ -442,6 +444,7 @@ section div:hover {
   box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
   padding: 0 20px 0 20px;
   line-height: normal;
+  position: relative;
 }
 
 .spinner {
