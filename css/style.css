@@ -382,11 +382,10 @@ article header .fa-heart:focus {
   color: var(--white);
   font-size: xx-large;
   text-align: center;
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 2.5rem;
+  width: 2rem;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
   transform: rotate(180deg);
   transition-duration: .5s;
 }
@@ -400,16 +399,17 @@ li:focus .fa-circle-check  {
 li div {
   display: flex;
   background-color: var(--light-green);
-  margin: -1rem -5rem -1rem 1rem;
-  width: 4rem;
+  margin: -2rem -6rem -2rem 2rem;
+  width: 100px;
   align-items: center;
+  border-radius: 0 20px 20px 0;
   justify-content: center;
   transition-duration: .5s;
 }
 
 li:hover div ,
 li:focus div {
-  margin-right: -1rem;
+  margin-right: -0.5rem;
 }
 
 .menus-cards article section {
@@ -543,7 +543,7 @@ li:focus div {
   white-space: nowrap;
 }
 
-.order-card1 li price b {
+.order-card1 li b {
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
@@ -584,7 +584,7 @@ li:focus div {
   white-space: nowrap;
 }
 
-.order-card2 li price b {
+.order-card2 li b {
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
@@ -725,6 +725,127 @@ li:focus div {
   article header .fa-heart:focus {
     color: rgb(147, 86, 220)
   }
+  .order-card1 li {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: .75rem;
+    margin: 1rem 0;
+    box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: slide-in-top 3s ease ;
+    max-width: 100%;
+  }
   
+  .order-card1 li section {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .order-card1 li section h3 {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .order-card1 li section p {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .order-card1 li price b {
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 2rem;
+    margin-top: 20px;
+  }
+  
+  .order-card2 li {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: .75rem;
+    margin: 1rem 0;
+    box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: slide-in-top 3s ease ;
+    max-width: 100%;
+  }
+  
+  .order-card2 li section {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .order-card2 li section h3 {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .order-card2 li section p {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .order-card2 li price b {
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 2rem;
+    margin-top: 20px;
+  }
+  
+  .order-card3 li {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: .75rem;
+    margin: 1rem 0;
+    box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: slide-in-top 3s ease ;
+    max-width: 100%;
+  }
+  
+  .order-card3 li section {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .order-card3 li section h3 {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .order-card3 li section p {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .order-card3 li b {
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 2rem;
+    margin-top: 20px;
+  }
 }
 
