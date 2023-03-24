@@ -380,30 +380,23 @@ article header .fa-heart:focus {
 .fa-circle-check{
   color: var(--white);
   font-size: xx-large;
-  padding:20px;
-  align-self: center;
+  text-align: center;
+  transform: translateX(100px);
+  cursor: pointer;
+  transition: all 900ms;
 }
 
 li:hover .fa-circle-check,
 li:focus .fa-circle-check  {
-  
+  padding: 20px 70px 20px 30px;
+  transform: translateX(0);
 }
+
 
 li div {
   display: flex;
   background-color: var(--light-green);
-  position: absolute;
-  right: 2px;
-  height: 80px;
-  border-radius: 0 20px 20px 0;
-  width: 80px;
-  align-items: center;
-
-}
-
-li div:hover,
-li div:focus {
-  
+  margin-right: -60px;
 }
 
 .menus-cards article section {
@@ -446,7 +439,6 @@ li div:focus {
   box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
   padding: 0 20px 0 20px;
   line-height: normal;
-  position: relative;
 }
 
 .spinner {
@@ -542,31 +534,43 @@ li div:focus {
 .order-card1 li  h3 ,
 .order-card2 li  h3 ,
 .order-card3 li h3  {
+  display: flex;
+  flex: 100%;
   margin-bottom: 0;
-  text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: wrap;
+  text-overflow: ellipsis;
 }
 
 .order-card1 li  p ,
 .order-card2 li  p ,
 .order-card3 li  p {
+  display:flex;
+  flex: 100%;
   margin-top: 0;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
 }
 
 .order-card1 li  b,
 .order-card2 li  b,
 .order-card3 li b {
+  display: flex;
+  flex: 100%;
   align-self: center;
   margin-top: 30px;
-  padding-right: 80px;
-  
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .order-card1 li i,
 .order-card2 li i,
 .order-card3 li i {
   align-self: center;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menus-cards .menus-btn {
