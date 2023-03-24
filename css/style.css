@@ -384,8 +384,6 @@ article header .fa-heart:focus {
   align-self: center;
 }
 
-
-
 li:hover .fa-circle-check,
 li:focus .fa-circle-check  {
   
@@ -395,16 +393,17 @@ li div {
   display: flex;
   background-color: var(--light-green);
   position: absolute;
-  right: 3px;
+  right: 2px;
+  height: 80px;
   border-radius: 0 20px 20px 0;
-  width: 55px;
+  width: 80px;
   align-items: center;
-  justify-content: center;
+
 }
 
 li div:hover,
 li div:focus {
- 
+  
 }
 
 .menus-cards article section {
@@ -560,7 +559,7 @@ li div:focus {
 .order-card3 li b {
   align-self: center;
   margin-top: 30px;
-  padding-right: 40px;
+  padding-right: 80px;
   
 }
 
