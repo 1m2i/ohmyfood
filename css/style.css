@@ -843,5 +843,23 @@ li:focus div {
     padding-left: 2rem;
     margin-top: 20px;
   }
+
+  li div {
+    display: flex;
+    background-color: var(--light-green);
+    margin: -2rem -6rem -2rem 2rem;
+    width: 100px;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    justify-content: center;
+    transition-duration: .5s;
+    margin-right: -115px;
+  }
+  
+  li:hover div ,
+  li:focus div {
+    margin-right: -2rem;
+  }
+  
 }
 
