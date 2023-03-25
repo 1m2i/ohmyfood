@@ -391,7 +391,6 @@ li:focus .fa-circle-check  {
   transform: rotate(0);
 }
 
-
 li div {
   display: flex;
   background-color: var(--light-green);
