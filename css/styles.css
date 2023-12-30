@@ -68,11 +68,7 @@ form input {
   border: unset;
 }
 
-main header {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+main header .btn {
   background-color: var(--light-grey);
   padding-bottom: 50px;
 }

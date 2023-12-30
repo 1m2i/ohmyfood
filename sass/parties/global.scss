@@ -13,27 +13,3 @@ body {
   box-shadow: 0 5px 5px var(--light-grey);
 }
 
-header {
-    display: flex;
-    justify-content : center;
-    color: black;
-    padding: 20px 0 20px 0;
-    box-shadow: 0 5px 5px var(--light-grey);
-  }
-  
-  form {
-    display: flex;
-    justify-content: center;
-    background-color: var(--grey);
-    height: 60px;
-    color: black;
-    padding-left: 100px;
-  }
-  
-  form input {
-    font-weight: bold;
-    font-size: large;
-    background-color: var(--grey) ;
-    border: unset;
-  }
-  
