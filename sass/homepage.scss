@@ -1,0 +1,52 @@
+
+.header {
+    display: flex;
+    justify-content : center;
+    color: black;
+    padding: 20px 0 20px 0;
+    box-shadow: 0 5px 5px var(--light-grey);
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey);
+    height: 40px;
+    color: black;
+    padding-left: 100px;
+  
+    form input {
+      font-weight: bold;
+      font-size: large;
+      background-color: var(--grey) ;
+      border: unset;
+    }
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+
+ main header a {
+    align-self: center;
+    margin: 20px 0;
+    border-radius: 30px;
+    padding: 15px 20px;
+    width: 50%;
+    color: var(--white);
+    background: linear-gradient(#ff79da 10%, rgb(147, 86, 220) 100%);
+    box-shadow: 0 10px 5px var(--light-grey);
+    cursor: pointer;
+  }
+  
+  main header a:hover, .search a:focus {
+    background: linear-gradient(rgba(255, 121, 218, 0.8) 10%, rgba(147, 86, 220, 0.8) 100%);
+    box-shadow: 0 10px 6px var(--light-grey);
+  }
+  
+  
+  main header P {
+    margin: 0 30px 0 30px;
+  }
+  
