@@ -3,13 +3,20 @@
     justify-content : center;
     color: black;
     padding: 20px 0 20px 0;
-    box-shadow: 0 5px 5px var($light-grey);
+    box-shadow: 0 5px 5px var(light-grey);
   }
 
+  .fa-location-dot {
+    align-self: center;
+    font-size: medium;
+    margin-bottom: 5px;
+    margin-right: 4px;
+  }
+  
   form {
     display: flex;
     justify-content: center;
-    background-color: var($grey);
+    background-color: var(--grey);
     height: 40px;
     color: black;
     padding-left: 100px;
@@ -43,7 +50,6 @@
     background: linear-gradient(rgba(255, 121, 218, 0.8) 10%, rgba(147, 86, 220, 0.8) 100%);
     box-shadow: 0 10px 6px var(--light-grey);
   }
-  
   
   main header P {
     margin: 0 30px 0 30px;
