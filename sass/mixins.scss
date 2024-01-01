@@ -4,4 +4,9 @@
     justify-content: center;
 }
 
+@mixin link {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
   

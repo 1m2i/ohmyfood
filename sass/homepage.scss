@@ -39,8 +39,8 @@
     text-align: center;
     background-color: var(--light-grey);
     padding-bottom: 50px;
-
-  .main-header P {
+// Used BEM
+  .main-header__text {
     margin: 0 30px 0 30px;
   }
 }
@@ -55,6 +55,8 @@
     background: linear-gradient(#ff79da 10%, rgb(147, 86, 220) 100%);
     box-shadow: 0 10px 5px var(--light-grey);
     cursor: pointer;
+    text-decoration: none;
+    
   
   .main-header a:hover, .search a:focus {
   background: linear-gradient(rgba(255, 121, 218, 0.8) 10%, rgba(147, 86, 220, 0.8) 100%);
@@ -96,3 +98,76 @@
 .introduction li:focus .icons {
   color: rgb(147, 86, 220);
 }
+
+//nesting utilisé
+main ul {
+  display: flex;
+  flex-direction: Column;
+  list-style-type: none;
+  padding:0;
+  gap: 20px;
+  padding-bottom: 30px;
+
+  main li {
+    border-radius: 20px;
+    background-color: var(--white);
+  }
+}
+
+.restaurant-cards {
+  display:flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+}
+
+.restaurant-cards ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.restaurant-cards figure {
+  width: 100%;
+  height: 320px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 0;
+  background-color: var(--white);
+  text-decoration: none;
+}
+
+.restaurant-cards img {
+  width: 100%;
+  height: 230px;
+}
+
+figure {
+  position:relative;
+  border: 1px ;
+  border-radius: 20px;
+  background: white;
+  width: 100%;
+}
+
+footer h3 {
+  font-family:"Shrikhand", cursive;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 1rem 0rem;
+  margin-bottom: 0;
+}
+
+footer ul {
+  padding:0;
+  @include link;
+}
+
+footer li >a {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  color: var(--white);
+} 
