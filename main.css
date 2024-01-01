@@ -1,6 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+.header-menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+.header-menus__img {
+  font-weight: bold;
+  width: 40%;
+}
+
+.fa-arrow-left {
+  font-size: x-large;
+}
+
+.menus-cards {
+  display: flex;
+  flex-direction: Column;
+  padding-bottom: 40px;
+  padding-top: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.menus-cards__ img {
+  height: 300px;
+  border-radius: unset;
+  background-color: unset;
+  width: 100%;
+}
+
+.menus-cards header {
+  padding: 0;
+  background-color: unset;
+}
+
 h1 {
   font-size: 1.7em;
 }
@@ -10,7 +46,7 @@ h1 {
   justify-content: center;
   color: black;
   padding: 20px 0 20px 0;
-  box-shadow: 0 5px 5px var(--grey);
+  box-shadow: 0 15px 15px var(--grey);
 }
 
 .search-bar {
@@ -121,7 +157,7 @@ main ul main li {
   scroll-behavior: smooth;
 }
 
-.restaurant-cards ul {
+.restaurant-cards .restaurant-section {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -167,8 +203,6 @@ footer ul {
 }
 
 footer li > a {
-  list-style-type: none;
-  text-decoration: none;
   margin: 0;
   color: var(--white);
 }

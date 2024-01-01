@@ -1,0 +1,36 @@
+.header-menus {
+    @include center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    
+    &__img {
+        font-weight: bold;
+        width: 40%;
+    }
+}
+
+  .fa-arrow-left {
+    font-size: x-large;
+  }  
+
+.menus-cards {
+    display: flex;
+    flex-direction: Column;
+    padding-bottom: 40px;
+    padding-top: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+
+    &__ img {
+    height: 300px;
+    border-radius: unset;
+    background-color: unset;
+    width: 100%;
+  }
+}
+  
+  .menus-cards header {
+    padding: 0;
+    background-color: unset
+  }

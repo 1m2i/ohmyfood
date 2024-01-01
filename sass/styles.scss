@@ -2,6 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 @import "./mixins.scss";
+@import "./menus.scss";
 @import "./homepage.scss";
 @import "./keyframes.scss";
 @import "./animations.scss";
@@ -38,12 +39,12 @@ img {
     left: -1.0rem;
   }
 
-  footer {
+footer {
     display: flex;
     flex-direction: column;
     color: var(--white);
     background-color: #3a3838;
     line-height: 1.5rem;
     padding-left: 20px;
-  }
+}
   
