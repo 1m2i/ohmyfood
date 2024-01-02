@@ -25,14 +25,13 @@
   width: 100%;
   background-color: #f5f5f5;
 }
-.menus-cards__ img {
+.menus-cards__img {
   height: 300px;
   border-radius: unset;
   background-color: unset;
   width: 100%;
 }
-
-.menus-cards header {
+.menus-cards__img__header {
   padding: 0;
   background-color: unset;
 }
@@ -44,7 +43,6 @@ h1 {
 .logo {
   display: flex;
   justify-content: center;
-  color: black;
   padding: 20px 0 20px 0;
   box-shadow: 0 15px 15px var(--grey);
 }
@@ -77,7 +75,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-color: var(--light-grey);
+  background-color: lightness var(--grey) 40%;
   padding-bottom: 50px;
 }
 .main-header .main-header__text {
@@ -179,12 +177,19 @@ main ul main li {
   height: 230px;
 }
 
-figure {
-  position: relative;
-  border: 1px;
-  border-radius: 20px;
-  background: white;
-  width: 100%;
+figcaption h3,
+figcaption p {
+  margin: 0;
+}
+
+figcaption > p {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 0.5px solid;
+  background-color: lightness var(--light-green) 50%;
+  border: unset;
+  padding: 5px;
 }
 
 footer h3 {
@@ -203,6 +208,9 @@ footer ul {
 }
 
 footer li > a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
   margin: 0;
   color: var(--white);
 }
@@ -314,7 +322,7 @@ img {
 
 .numbers {
   display: flex;
-  align-items: center;
+  justify-content: center;
   justify-content: center;
   background-color: var(--purple);
   color: var(--white);
@@ -326,6 +334,44 @@ img {
   right: 10px;
   bottom: 9px;
   left: -1rem;
+}
+
+figure {
+  position: relative;
+  border: 1px;
+  border-radius: 20px;
+  background: white;
+  width: 100%;
+}
+
+figcaption .far.fa-heart,
+figcaption .fas.fa-heart {
+  position: absolute;
+  font-size: 2em;
+  border: unset;
+  right: 20px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+figcaption .fas.fa-heart {
+  color: transparent;
+  overflow: hidden !important;
+  transition-duration: 3s;
+}
+
+figcaption .far.fa-heart:hover,
+figcaption .far.fa-heart:focus,
+figcaption .fas.fa-heart:hover,
+figcaption .fas.fa-heart:focus {
+  color: rgb(147, 86, 220);
+}
+
+figcaption {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-overflow: ellipsis;
 }
 
 footer {

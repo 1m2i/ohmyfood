@@ -24,8 +24,7 @@ img {
   border-radius: 20px 20px 0 0;
   }
   .numbers {
-    display: flex;
-    align-items: center;
+    @include center;
     justify-content: center;
     background-color: var(--purple);
     color: var(--white);
@@ -38,6 +37,44 @@ img {
     bottom: 9px;
     left: -1.0rem;
   }
+
+figure {
+    position:relative;
+    border: 1px ;
+    border-radius: 20px;
+    background: white;
+    width: 100%;
+  }
+
+  figcaption .far.fa-heart,
+figcaption .fas.fa-heart {
+  position: absolute;
+  font-size: 2em;
+  border: unset; 
+  right: 20px; 
+  padding-top: 5px;
+  cursor: pointer;
+}
+//icon animation 
+figcaption .fas.fa-heart {
+  color: transparent;
+  overflow: hidden !important;
+  transition-duration: 3s; 
+}
+
+figcaption .far.fa-heart:hover,
+figcaption .far.fa-heart:focus,
+figcaption .fas.fa-heart:hover,
+figcaption .fas.fa-heart:focus {
+  color: rgb(147, 86, 220);
+}
+
+figcaption {
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-overflow: ellipsis;
+}
 
 footer {
     display: flex;
