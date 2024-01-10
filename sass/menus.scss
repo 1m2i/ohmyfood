@@ -4,9 +4,9 @@
     gap: 50px;
     padding: 20px;
     
-    &__img {
-        font-weight: bold;
-        width: 40%;
+    img {
+    font-weight: bold;
+    width: 40%;
     }
 }
 
@@ -22,15 +22,54 @@
     width: 100%;
     background-color: #f5f5f5;
 
-    &__img {
+    img {
     height: 300px;
     border-radius: unset;
     background-color: unset;
     width: 100%;
 
-    &__header {
-    padding: 0;
-    background-color: unset
-       }
     }
 }
+.menus-cards header{
+    padding: 0;
+    background-color:unset;
+}
+
+.menus-cards article {
+    margin-top: -9rem;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    padding: 20px;
+    background-color: #f5f5f5;
+  
+    header {
+    @include space;
+    position: relative;
+    flex-direction: row;
+    background-color: unset;
+    font-family: shrikhand, cursive;
+    box-shadow: unset;
+  }
+}
+
+article header .fas.fa-heart {
+    color: transparent;
+  }
+  
+article header .fas.fa-heart,
+article header .far.fa-heart {
+    position: absolute;
+    font-size: 2em;
+    border: unset; 
+    right: 27px; 
+    cursor: pointer;
+    padding-top: 15px;
+    overflow: hidden !important;
+    transition-duration: 3s; 
+  }
+  
+  article header .fa-heart:hover,
+  article header .fa-heart:focus {
+    color: rgb(147, 86, 220);
+  }
+  

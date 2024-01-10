@@ -25,7 +25,6 @@ img {
   }
   .numbers {
     @include center;
-    justify-content: center;
     background-color: var(--purple);
     color: var(--white);
     width: 1rem;
@@ -70,8 +69,7 @@ figcaption .fas.fa-heart:focus {
 }
 
 figcaption {
-  display:flex;
-  justify-content: space-between;
+  @include space;
   padding: 20px;
   text-overflow: ellipsis;
 }
