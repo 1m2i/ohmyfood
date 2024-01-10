@@ -187,7 +187,7 @@ figcaption > p {
   top: 20px;
   right: 20px;
   border: 0.5px solid;
-  background-color: lightness var(--light-green) 50%;
+  background-color: var(--light-green);
   border: unset;
   padding: 5px;
 }
@@ -342,6 +342,9 @@ figure {
   border-radius: 20px;
   background: white;
   width: 100%;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 figcaption .far.fa-heart,

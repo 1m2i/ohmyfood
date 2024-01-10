@@ -153,11 +153,10 @@ figcaption > p{
   top: 20px;
   right: 20px;
   border: 0.5px solid;
-  background-color : lightness (var(--light-green) 50%);
+  background-color: var(--light-green);
   border: unset;
   padding: 5px;
 }
-
 
 footer h3 {
   font-family:"Shrikhand", cursive;

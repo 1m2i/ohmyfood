@@ -44,10 +44,11 @@ figure {
     border-radius: 20px;
     background: white;
     width: 100%;
+    @include link;
   }
 
   figcaption .far.fa-heart,
-figcaption .fas.fa-heart {
+  figcaption .fas.fa-heart {
   position: absolute;
   font-size: 2em;
   border: unset; 
@@ -70,10 +71,10 @@ figcaption .fas.fa-heart:focus {
 }
 
 figcaption {
-    display:flex;
-    justify-content: space-between;
-    padding: 20px;
-    text-overflow: ellipsis;
+  display:flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-overflow: ellipsis;
 }
 
 footer {
