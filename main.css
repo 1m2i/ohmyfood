@@ -169,7 +169,11 @@ main ul main li {
   transition: 0.3s;
   margin: 0;
   background-color: var(--white);
+}
+.restaurant-cards figure a {
+  color: black;
   text-decoration: none;
+  list-style-type: none;
 }
 
 .restaurant-cards img {
@@ -186,7 +190,6 @@ figcaption > p {
   position: absolute;
   top: 20px;
   right: 20px;
-  border: 0.5px solid;
   background-color: var(--light-green);
   border: unset;
   padding: 5px;
@@ -342,9 +345,6 @@ figure {
   border-radius: 20px;
   background: white;
   width: 100%;
-  color: black;
-  text-decoration: none;
-  list-style-type: none;
 }
 
 figcaption .far.fa-heart,

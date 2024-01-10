@@ -39,13 +39,12 @@ img {
   }
 
 figure {
-    position:relative;
-    border: 1px ;
-    border-radius: 20px;
-    background: white;
-    width: 100%;
-    @include link;
-  }
+  position:relative;
+  border: 1px ;
+  border-radius: 20px;
+  background: white;
+  width: 100%;
+}
 
   figcaption .far.fa-heart,
   figcaption .fas.fa-heart {

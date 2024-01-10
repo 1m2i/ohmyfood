@@ -55,7 +55,6 @@
     cursor: pointer;
     text-decoration: none;
     
-  
   .main-header a:hover, .search a:focus {
   background: linear-gradient(rgba(255, 121, 218, 0.8) 10%, rgba(147, 86, 220, 0.8) 100%);
   box-shadow: 0 10px 6px var(--light-grey);
@@ -135,7 +134,10 @@ main ul {
   transition: 0.3s;
   margin: 0;
   background-color: var(--white);
-  text-decoration: none;
+
+  a {
+     @include link;
+  }
 }
 
 .restaurant-cards img {
@@ -152,7 +154,6 @@ figcaption > p{
   position: absolute;
   top: 20px;
   right: 20px;
-  border: 0.5px solid;
   background-color: var(--light-green);
   border: unset;
   padding: 5px;
