@@ -41,7 +41,7 @@ figure {
   position:relative;
   border: 1px ;
   border-radius: 20px;
-  background: white;
+  background: var(--white);
   width: 100%;
 }
 
@@ -65,7 +65,7 @@ figcaption .far.fa-heart:hover,
 figcaption .far.fa-heart:focus,
 figcaption .fas.fa-heart:hover,
 figcaption .fas.fa-heart:focus {
-  color: rgb(147, 86, 220);
+  color: var(--purple);
 }
 
 figcaption {
@@ -78,7 +78,7 @@ footer {
     display: flex;
     flex-direction: column;
     color: var(--white);
-    background-color: #3a3838;
+    background-color: var(--light-black);
     line-height: 1.5rem;
     padding-left: 20px;
 }

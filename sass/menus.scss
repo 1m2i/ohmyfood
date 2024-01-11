@@ -30,9 +30,12 @@
 
     }
 }
-.menus-cards header{
+.menus-cards h2 {
+    font-weight: unset;
+    header {
     padding: 0;
     background-color:unset;
+  }
 }
 
 .menus-cards article {
@@ -40,7 +43,7 @@
     border-radius: 40px 40px 0 0;
     position: relative;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: var(--darker-grey);
   
     header {
     @include space;
@@ -70,6 +73,45 @@ article header .far.fa-heart {
   
   article header .fa-heart:hover,
   article header .fa-heart:focus {
-    color: rgb(147, 86, 220);
+    color: var( --purple);
+}
+  
+.menus-cards article section {
+   @include horizontal;
+    width: 100%;
+}
+  
+.underline-h2 {
+    width: 50px;
+    height: 0.25em;
+    background-color: var(--light-green);
+    margin: 0;
+    margin-left: 0px;
+    padding: 0;
+    margin-left:1px;
   }
   
+.menus-cards article section h2 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  
+.menus-cards article section ul {
+    @include horizontal;
+    width: 100%; 
+}
+
+
+.menus-cards .order-card1 li,
+.menus-cards .order-card2 li,
+.menus-cards .order-card3 li {
+  @include space;
+  background-color: var(--white);
+  box-shadow: 2px 2px 2px var(--light-grey);
+  padding: 20px;
+  line-height: normal;
+  border-radius: 20px 20px;
+  height: fit-content;
+  margin: 1rem;
+  @include text-appeal;
+}

@@ -32,7 +32,10 @@
   width: 100%;
 }
 
-.menus-cards header {
+.menus-cards h2 {
+  font-weight: unset;
+}
+.menus-cards h2 header {
   padding: 0;
   background-color: unset;
 }
@@ -42,7 +45,7 @@
   border-radius: 40px 40px 0 0;
   position: relative;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: var(--darker-grey);
 }
 .menus-cards article header {
   display: flex;
@@ -72,7 +75,51 @@ article header .far.fa-heart {
 
 article header .fa-heart:hover,
 article header .fa-heart:focus {
-  color: rgb(147, 86, 220);
+  color: var(--purple);
+}
+
+.menus-cards article section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.underline-h2 {
+  width: 50px;
+  height: 0.25em;
+  background-color: var(--light-green);
+  margin: 0;
+  margin-left: 0px;
+  padding: 0;
+  margin-left: 1px;
+}
+
+.menus-cards article section h2 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.menus-cards article section ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menus-cards .order-card1 li,
+.menus-cards .order-card2 li,
+.menus-cards .order-card3 li {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  box-shadow: 2px 2px 2px var(--light-grey);
+  padding: 20px;
+  line-height: normal;
+  border-radius: 20px 20px;
+  height: fit-content;
+  margin: 1rem;
+  flex-direction: row;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h1 {
@@ -339,12 +386,13 @@ footer li > a {
 :root {
   --grey: #EDEDED;
   --light-grey: #F7F7F7;
+  --darker-grey:#f5f5f5;
   --white: #fff;
   --light-purple: #f2eafb;
   --purple: #9356DC;
   --light-green: #99e2d0;
-  --violet: #FF79DA;
-  --pink: #9356DC;
+  --pink: #FF79DA;
+  --light-black:#1f1e1e;
 }
 
 body {
@@ -381,7 +429,7 @@ figure {
   position: relative;
   border: 1px;
   border-radius: 20px;
-  background: white;
+  background: var(--white);
   width: 100%;
 }
 
@@ -405,7 +453,7 @@ figcaption .far.fa-heart:hover,
 figcaption .far.fa-heart:focus,
 figcaption .fas.fa-heart:hover,
 figcaption .fas.fa-heart:focus {
-  color: rgb(147, 86, 220);
+  color: var(--purple);
 }
 
 figcaption {
@@ -419,7 +467,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: var(--white);
-  background-color: #3a3838;
+  background-color: var(--light-black);
   line-height: 1.5rem;
   padding-left: 20px;
 }

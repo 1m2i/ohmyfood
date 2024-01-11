@@ -15,3 +15,13 @@
     justify-content: space-between;
 }
   
+@mixin horizontal {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin text-appeal {
+    flex-direction: row;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
