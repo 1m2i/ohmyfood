@@ -104,6 +104,7 @@
 }
 
 //nesting utilisé
+
 main ul {
   display: flex;
   flex-direction: Column;
@@ -117,6 +118,7 @@ main ul {
     background-color: var(--white);
   }
 }
+
 // partie restaurant 
 
 .restaurant-cards {
@@ -125,6 +127,12 @@ main ul {
   padding: 20px;
   background-color: #f5f5f5;
   scroll-behavior: smooth;
+
+  .restaurant-cards ul {
+    @media (min-width: 768px) {
+        flex-direction: column;
+      }
+  }
 }
 
 .restaurant-cards .restaurant-section {
@@ -132,6 +140,7 @@ main ul {
   justify-content: space-between;
   list-style-type: none;
 }
+
 
 .restaurant-cards figure {
   width: 100%;

@@ -484,6 +484,11 @@ main ul main li {
   background-color: #f5f5f5;
   scroll-behavior: smooth;
 }
+@media (min-width: 768px) {
+  .restaurant-cards .restaurant-cards ul {
+    flex-direction: column;
+  }
+}
 
 .restaurant-cards .restaurant-section {
   display: flex;
