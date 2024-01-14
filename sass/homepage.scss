@@ -70,7 +70,14 @@
 }
 
 .introduction ul {
-  padding-left: Opx;
+    padding-left: Opx;
+    
+    @media (min-width: 768px){
+        .introduction ul { 
+            flex-direction: row;
+        }
+    }
+
 }
 
 .introduction li {

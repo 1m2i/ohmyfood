@@ -12,6 +12,11 @@
   font-weight: bold;
   width: 40%;
 }
+@media (min-width: 768px) {
+  .header-menus img {
+    width: 30%;
+  }
+}
 
 .fa-arrow-left {
   font-size: x-large;
@@ -174,7 +179,7 @@ li:focus div {
   border-radius: 30px;
   border: unset;
   height: 50px;
-  color: white;
+  color: var(--white);
   width: 50%;
   cursor: pointer;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
@@ -182,9 +187,9 @@ li:focus div {
 }
 
 .order-card1 li {
-  display: flex;
   background-color: var(--white);
   padding: 1rem;
+  display: flex;
   border-radius: 0.75rem;
   margin: 1rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -208,6 +213,146 @@ li:focus div {
 }
 
 .order-card1 li b {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: 700;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
+.order-card2 li {
+  background-color: var(--white);
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease;
+  max-width: 100%;
+}
+.order-card2 li .order-card2 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li section h3,
+.order-card2 li section p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li b {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: 700;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
+.order-card2 li {
+  background-color: var(--white);
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease;
+  max-width: 100%;
+}
+.order-card2 li .order-card2 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li section h3,
+.order-card2 li section p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li b {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: 700;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
+.order-card2 li {
+  background-color: var(--white);
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease;
+  max-width: 100%;
+}
+.order-card2 li .order-card2 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li section h3,
+.order-card2 li section p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li b {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: 700;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
+.order-card3 li {
+  background-color: var(--white);
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease;
+  max-width: 100%;
+}
+.order-card3 li .order-card3 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card3 li section h3,
+.order-card3 li section p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card3 li b {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -289,6 +434,11 @@ h1 {
 
 .introduction ul {
   padding-left: Opx;
+}
+@media (min-width: 768px) {
+  .introduction ul .introduction ul {
+    flex-direction: row;
+  }
 }
 
 .introduction li {
