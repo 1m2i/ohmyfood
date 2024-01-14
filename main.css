@@ -122,6 +122,53 @@ article header .fa-heart:focus {
   text-overflow: ellipsis;
 }
 
+.fa-circle-check {
+  color: var(--white);
+  font-size: xx-large;
+  text-align: center;
+  border-radius: 0 20px 20px 0;
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+.fa-circle-check li:hover .fa-circle-check,
+.fa-circle-check li:focus .fa-circle-check {
+  transform: rotate(0);
+}
+
+li div {
+  display: flex;
+  background-color: var(--light-green);
+  margin: -2rem -6rem -2rem 2rem;
+  width: 100px;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  justify-content: center;
+  transition-duration: 0.5s;
+  margin-right: -110px;
+}
+
+li:hover div,
+li:focus div {
+  margin-right: -1.5rem;
+}
+
+.menus-cards .order-card1 li,
+.menus-cards .order-card2 li,
+.menus-cards .order-card3 li {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  box-shadow: 2px 2px 2px var(--light-grey);
+  padding: 20px;
+  line-height: normal;
+  border-radius: 20px 20px;
+  height: fit-content;
+  margin: 1rem;
+  flex-direction: row;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 h1 {
   font-size: 1.7em;
 }
