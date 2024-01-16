@@ -83,5 +83,13 @@ footer {
     background-color: var(--light-black);
     line-height: 1.5rem;
     padding-left: 20px;
+
+    @media (min-width: 992px){
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row-reverse;
+      padding-top: 40px;
+      
+    }
 }
   
