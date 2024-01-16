@@ -484,12 +484,19 @@ main ul main li {
   background-color: #f5f5f5;
   scroll-behavior: smooth;
 }
-@media (min-width: 768px) {
-  .restaurant-cards .restaurant-cards ul {
-    flex-direction: column;
+
+@media (min-width: 992px) {
+  .restaurant-cards ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .restaurant-cards li {
+    width: 45%;
+    margin: 2.5%; /* Adds spacing between the cards */
   }
 }
-
 .restaurant-cards .restaurant-section {
   display: flex;
   justify-content: space-between;
@@ -568,6 +575,7 @@ footer li > a {
   list-style-type: none;
   margin: 0;
   color: var(--white);
+  font-weight: 900;
 }
 
 @keyframes grow {
