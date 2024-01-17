@@ -491,6 +491,7 @@ main ul main li {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    gap: unset;
   }
   .restaurant-cards li {
     width: 45%;
@@ -509,7 +510,7 @@ main ul main li {
   width: 100%;
   height: 320px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 var(--black);
   transition: 0.3s;
   margin: 0;
   background-color: var(--white);
@@ -666,7 +667,7 @@ footer li > a {
   --purple: #9356DC;
   --light-green: #99e2d0;
   --pink: #FF79DA;
-  --light-black:#1f1e1e;
+  --light-black:#161010;
 }
 
 body {
@@ -721,6 +722,31 @@ figcaption .fas.fa-heart {
   color: transparent;
   overflow: hidden !important;
   transition-duration: 3s;
+}
+@media (min-width: 992) {
+  figcaption .fas.fa-heart figcaption .far.fa-heart {
+    position: absolute;
+    font-size: 2em;
+    border: unset;
+    right: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  figcaption .fas.fa-heart figcaption .fas.fa-heart {
+    color: transparent;
+    position: absolute;
+    font-size: 2em;
+    border: unset;
+    right: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  figcaption .fas.fa-heart figcaption .far.fa-heart:hover,
+  figcaption .fas.fa-heart figcaption .far.fa-heart:focus,
+  figcaption .fas.fa-heart figcaption .fas.fa-heart:hover,
+  figcaption .fas.fa-heart figcaption .fas.fa-heart:focus {
+    color: var(--purple);
+  }
 }
 
 figcaption .far.fa-heart:hover,

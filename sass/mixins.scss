@@ -53,3 +53,12 @@
     animation: slide-in-top 3s ease ;
     max-width: 100%;
 }
+
+@mixin icon-heart {
+    position: absolute;
+    font-size: 2em;
+    border: unset; 
+    right: 20px; 
+    padding-top: 5px;
+    cursor: pointer;
+}
