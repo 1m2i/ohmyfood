@@ -195,8 +195,9 @@ footer h3 {
 
   @media (min-width: 992px){
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: row-reverse;
+    padding-right: 50px;
   }
 }
 

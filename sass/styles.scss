@@ -73,10 +73,8 @@ figcaption .fas.fa-heart {
       figcaption .fas.fa-heart:focus {
         color: var(--purple)
       }
-    
     }
-      
-}  
+}
 
 
 figcaption .far.fa-heart:hover,
@@ -102,9 +100,9 @@ footer {
 
     @media (min-width: 992px){
       display: flex;
-      justify-content: space-evenly;
+      justify-content: flex-start;
       flex-direction: row-reverse;
-      padding-top: 40px;
+      padding-top: 70px;
       
     }
 }
