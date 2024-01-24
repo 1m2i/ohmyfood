@@ -17,12 +17,16 @@
 
 .fa-arrow-left {
     font-size: x-large;
+
+    @media (min-width: 992px) {
+      align-self: flex-start;
+  }
+    
   }  
 
 .menus-cards {
     display: flex;
     flex-direction: Column;
-    padding-bottom: 40px;
     padding-top: 0;
     width: 100%;
     background-color: white;
@@ -49,7 +53,6 @@
     position: relative;
     padding: 20px;
     background-color: var(--darker-grey);
-    padding-bottom: unset;
   
     header {
     @include space;
@@ -269,4 +272,34 @@ li div {
     
     .order-card3 li b {
       @include text-end;
+    }
+    @media (min-widith: 992px){
+      .order-card3 li section {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .order-card3 li section h3 {
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      
+      .order-card3 li section p {
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      
+      .order-card3 li b {
+        font-weight: 700;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 2rem;
+        margin-top: 20px;
+      }
+    
     }
