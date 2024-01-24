@@ -152,7 +152,7 @@ li div {
     border-radius: 0 20px 20px 0;
     justify-content: center;
     transition-duration: .5s;
-    margin-right: -110px;
+    margin-right: -125px;
   }
   
   li:hover div ,
@@ -276,31 +276,20 @@ li div {
     }
     @media (min-widith: 992px){
       .order-card3 li section {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
+        @include text-overflow;
       }
       .order-card3 li section h3 {
         margin: 0;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
+        @include text-overflow;
       }
       
       .order-card3 li section p {
         margin: 0;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
+        @include text-overflow;
       }
       
       .order-card3 li b {
-        font-weight: 700;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding-left: 2rem;
-        margin-top: 20px;
+        @include text-end;
       }
     
     }

@@ -161,7 +161,7 @@ li div {
   border-radius: 0 20px 20px 0;
   justify-content: center;
   transition-duration: 0.5s;
-  margin-right: -110px;
+  margin-right: -125px;
 }
 
 li:hover div,
@@ -392,10 +392,10 @@ li:focus div {
     white-space: nowrap;
   }
   .order-card3 li b {
-    font-weight: 700;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    font-weight: 700;
     padding-left: 2rem;
     margin-top: 20px;
   }
@@ -717,7 +717,7 @@ footer li > a {
 
 body {
   font-family: "Roboto", sans-serif;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: auto;
   padding: 0;
 }
