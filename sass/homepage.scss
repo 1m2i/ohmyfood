@@ -35,7 +35,7 @@
     @include center;
     flex-direction: column;
     text-align: center;
-    background-color: lightness (var(--grey) 40%);
+    background-color: (var(--light-grey));
     padding-bottom: 50px;
 // Used BEM
   .main-header__text {
@@ -66,7 +66,7 @@
   flex-direction: column;
   padding: 30px;
   gap: 30px;
-  background-color: var(--grey);
+  background-color: var(--white);
 }
 
 .introduction ul {
@@ -91,6 +91,7 @@
   width: 100%;
   cursor: pointer;
   box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
+  background-color: var(--light-grey);
 }
 
 .introduction li:hover ,
@@ -127,6 +128,9 @@ main ul {
   padding: 20px;
   background-color: #f5f5f5;
   scroll-behavior: smooth;
+  @media (min-width: 992px){
+    padding: 50px;
+  }
 }
 
 @media (min-width: 992px) {

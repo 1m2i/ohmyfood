@@ -28,7 +28,7 @@
   padding-bottom: 40px;
   padding-top: 0;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 .menus-cards img {
   height: 300px;
@@ -60,6 +60,12 @@
   background-color: unset;
   font-family: shrikhand, cursive;
   box-shadow: unset;
+}
+@media (min-width: 992px) {
+  .menus-cards article {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }
 
 article header .fas.fa-heart {
@@ -400,7 +406,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-color: lightness var(--grey) 40%;
+  background-color: var(--light-grey);
   padding-bottom: 50px;
 }
 .main-header .main-header__text {
@@ -429,7 +435,7 @@ h1 {
   flex-direction: column;
   padding: 30px;
   gap: 30px;
-  background-color: var(--grey);
+  background-color: var(--white);
 }
 
 .introduction ul {
@@ -452,6 +458,7 @@ h1 {
   width: 100%;
   cursor: pointer;
   box-shadow: rgba(50, 50, 93, 0) 0px 5px 20px 0px, rgba(0, 0, 0, 0.3) -1px 5px 30px -10px;
+  background-color: var(--light-grey);
 }
 
 .introduction li:hover,
@@ -483,6 +490,11 @@ main ul main li {
   padding: 20px;
   background-color: #f5f5f5;
   scroll-behavior: smooth;
+}
+@media (min-width: 992px) {
+  .restaurant-cards {
+    padding: 50px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -661,7 +673,7 @@ footer li > a {
 
 :root {
   --grey: #EDEDED;
-  --light-grey: #F7F7F7;
+  --light-grey: #F6F6F6;
   --darker-grey:#f5f5f5;
   --white: #fff;
   --light-purple: #f2eafb;
@@ -778,6 +790,7 @@ footer {
     justify-content: flex-start;
     flex-direction: row-reverse;
     padding-top: 70px;
+    gap: 50px;
   }
 }
 

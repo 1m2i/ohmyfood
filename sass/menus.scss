@@ -25,7 +25,7 @@
     padding-bottom: 40px;
     padding-top: 0;
     width: 100%;
-    background-color: #f5f5f5;
+    background-color: white;
 
     img {
     height: 300px;
@@ -37,7 +37,6 @@
 }
 .menus-cards h2 {
     font-weight: unset;
-    
     header {
     padding: 0;
     background-color:unset;
@@ -58,6 +57,10 @@
     background-color: unset;
     font-family: shrikhand, cursive;
     box-shadow: unset;
+  }
+  @media (min-width: 992px){
+    margin-left: 80px;
+    margin-right: 80px;
   }
 }
 
@@ -106,7 +109,6 @@ article header .far.fa-heart {
     @include horizontal;
     width: 100%; 
 }
-
 
 .menus-cards .order-card1 li,
 .menus-cards .order-card2 li,
