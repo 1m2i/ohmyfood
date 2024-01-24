@@ -14,7 +14,6 @@
     }
 }
 
-
 .fa-arrow-left {
     font-size: x-large;
 
@@ -48,6 +47,8 @@
 }
 
 .menus-cards article {
+    display:flex;
+    flex-direction: column;;
     margin-top: -9rem;
     border-radius: 40px 40px 0 0;
     position: relative;

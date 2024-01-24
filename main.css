@@ -50,6 +50,8 @@
 }
 
 .menus-cards article {
+  display: flex;
+  flex-direction: column;
   margin-top: -9rem;
   border-radius: 40px 40px 0 0;
   position: relative;
@@ -518,7 +520,6 @@ main ul main li {
 .restaurant-cards {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   background-color: #f5f5f5;
   scroll-behavior: smooth;
 }
