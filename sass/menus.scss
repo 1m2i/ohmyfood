@@ -2,26 +2,33 @@
     @include center;
     align-items: center;
     gap: 50px;
-    padding: 20px;
+    padding: 30px;
+    position: relative;
+
+    @media (min-width: 992px){
+      align-items: unset;
+  }
 
     img {
         font-weight: bold;
-        width: 40%;
+        width: 30%;
 
-        @media (min-width: 768px) {
-            width: 30%;
+        @media (min-width: 778px) {
+          width: 20%;
         }
     }
-}
+  }
 
 .fa-arrow-left {
     font-size: x-large;
 
-    @media (min-width: 992px) {
-      align-self: flex-start;
-  }
-    
-  }  
+    @media (min-width: 992px){
+        position: absolute;
+        left: 50px;
+        padding-top: 15px;
+        align-items: center;
+    }
+}  
 
 .menus-cards {
     display: flex;
@@ -49,7 +56,7 @@
 .menus-cards article {
     display:flex;
     flex-direction: column;;
-    margin-top: -9rem;
+    margin-top: -5rem;
     border-radius: 40px 40px 0 0;
     position: relative;
     padding: 20px;
@@ -274,7 +281,7 @@ li:focus div {
     .order-card3 li b {
       @include text-end;
     }
-    @media (min-widith: 992px){
+@media (min-widith: 992px){
       .order-card3 li section {
         @include text-overflow;
       }
@@ -291,4 +298,12 @@ li:focus div {
       .order-card3 li b {
         @include text-end;
       }
+
+@media (min-width: 992px) {
+      .header-menus {
+        position: absolute;
+        align-items: unset;
+        gap: unset;
+    }
+  }
 }
