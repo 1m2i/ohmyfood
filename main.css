@@ -51,6 +51,7 @@
   position: relative;
   padding: 20px;
   background-color: var(--darker-grey);
+  padding-bottom: unset;
 }
 .menus-cards article header {
   display: flex;

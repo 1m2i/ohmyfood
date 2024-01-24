@@ -49,6 +49,7 @@
     position: relative;
     padding: 20px;
     background-color: var(--darker-grey);
+    padding-bottom: unset;
   
     header {
     @include space;
