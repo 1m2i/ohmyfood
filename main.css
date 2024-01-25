@@ -76,14 +76,6 @@
   font-family: shrikhand, cursive;
   box-shadow: unset;
 }
-@media (min-width: 992px) {
-  .menus-cards article header {
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-}
 
 article header .fas.fa-heart {
   color: transparent;
@@ -99,12 +91,6 @@ article header .far.fa-heart {
   padding-top: 15px;
   overflow: hidden !important;
   transition-duration: 3s;
-}
-@media (min-width: 992px) {
-  article header .fas.fa-heart,
-  article header .far.fa-heart {
-    right: 360px;
-  }
 }
 
 article header .fa-heart:hover,
@@ -422,6 +408,14 @@ li:focus div {
     position: absolute;
     align-items: unset;
     gap: unset;
+  }
+}
+@media (min-widith: 992px) and (min-width: 992px) {
+  .menus-cards article header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 }
 h1 {

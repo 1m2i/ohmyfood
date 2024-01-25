@@ -69,13 +69,6 @@
     background-color: unset;
     font-family: shrikhand, cursive;
     box-shadow: unset;
-
-    @media (min-width: 992px){
-      display: flex;
-      justify-content: space-evenly;
-      margin-left: 80px;
-      margin-right: 80px;
-  }
 }
 }
 
@@ -93,11 +86,6 @@ article header .far.fa-heart {
     padding-top: 15px;
     overflow: hidden !important;
     transition-duration: 3s; 
-
-    @media (min-width: 992px){
-      right: 360px;
-    }
-
 }
   
 article header .fa-heart:hover,
@@ -314,4 +302,13 @@ li:focus div {
         gap: unset;
     }
   }
+@media (min-width: 992px){
+      .menus-cards article header {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+
+}
 }
