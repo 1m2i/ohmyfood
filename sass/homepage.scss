@@ -4,9 +4,13 @@
   }
 
 .logo {
-      @include center;
-      padding: 20px 0 20px 0;
-      box-shadow: 0 15px 15px var(--grey); 
+    @include center;
+    padding: 20px 0 20px 0;
+    box-shadow: 0 15px 15px var(--grey);
+
+    img {
+      border-radius: unset;
+    }
 }
 
 .search-bar {
@@ -19,17 +23,18 @@
 }
 
 .fa-location-dot {
-  align-self: center;
-  font-size: medium;
-  margin-right: 4px;
-}
+    align-self: center;
+    font-size: small;
+    margin-right: 10px;
+    padding-bottom: 6px;
+  }
 
 .search-bar  input {
-    width: 150px;
-    font-weight: bold;
-    font-size: large;
-    background-color: var(--grey);
-    border: unset;
+  width: 150px;
+  font-weight: bold;
+  font-size: large;
+  background-color: var(--grey);
+  border: unset;
  }
 
 .main-header  {
@@ -37,7 +42,7 @@
     flex-direction: column;
     text-align: center;
     background-color: (var(--light-grey));
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 // Used BEM
   .main-header__text {
     margin: 0 30px 0 30px;
@@ -49,7 +54,6 @@
     margin: 20px 0;
     border-radius: 30px;
     padding: 15px 20px;
-    width: 50%;
     color: var(--white);
     background: linear-gradient(#ff79da 10%, rgb(147, 86, 220) 100%);
     box-shadow: 0 10px 5px var(--light-grey);
@@ -65,9 +69,13 @@
 .introduction  {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 50px;
   gap: 30px;
   background-color: var(--white);
+
+  @media (min-width: 992px){
+    padding: 50px 180px;
+    }
 }
 
 .introduction ul {
@@ -84,10 +92,10 @@
 .introduction li {
   display: flex;
   padding-top: 25px;
-  gap: 25px;
+  gap: 10px;
   border: 2px solid var(--light-grey);
   border-radius: 40px;
-  height: 50px;
+  height: 35px;
   transition: 0.3s;
   width: 100%;
   cursor: pointer;
@@ -119,6 +127,10 @@ main ul {
     border-radius: 20px;
     background-color: var(--white);
   }
+
+  @media (min-width: 992px){
+    flex-direction: row;
+  }
 }
 
 // partie restaurant 
@@ -129,7 +141,7 @@ main ul {
   background-color: #f5f5f5;
   scroll-behavior: smooth;
   @media (min-width: 992px){
-    padding: 50px;
+    padding: 50px 180px;
   }
 }
 
@@ -144,7 +156,7 @@ main ul {
 
   .restaurant-cards li {
     width: 45%; 
-    margin: 2.5%; /* Adds spacing between the cards */
+    margin: 0px; /* Adds spacing between the cards */
   }
 }
 
@@ -152,8 +164,9 @@ main ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  padding: 0px;
+  margin: 0px;
+  gap: 30px;
 }
 
 .restaurant-cards figure {
