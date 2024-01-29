@@ -1,6 +1,6 @@
 
   h1 {
-    font-size: 1.7em;
+    font-size: 24px;
   }
 
 .logo {
@@ -75,11 +75,13 @@
 
   @media (min-width: 992px){
     padding: 50px 180px;
+    margin: 0px;
     }
 }
 
 .introduction ul {
-    padding-left: Opx;
+    padding-left: 0px;
+    margin: 0px;;
     
     @media (min-width: 768px){
         .introduction ul { 
@@ -130,6 +132,7 @@ main ul {
 
   @media (min-width: 992px){
     flex-direction: row;
+    margin: 0px;
   }
 }
 
@@ -204,7 +207,7 @@ figcaption > p{
 
 footer h3 {
   font-family:"Shrikhand", cursive;
-  font-weight: 700;
+  font-weight: lighter;
   font-size: 30px;
   margin: 1rem 0rem;
   margin-bottom: 0;
@@ -233,7 +236,7 @@ footer li >a {
   @include link;
   margin: 0;
   color: var(--white);
-  font-weight: 900;
+  font-weight: lighter;
 } 
 
 
