@@ -15,6 +15,7 @@
 
         @media (min-width: 778px) {
           width: 20%;
+          border-radius: unset;
         }
     }
   }
@@ -277,7 +278,7 @@ li:focus div {
     .order-card3 li b {
       @include text-end;
     }
-@media (min-widith: 992px){
+@media (min-width: 992px){
       .order-card3 li section {
         @include text-overflow;
       }
@@ -306,9 +307,13 @@ li:focus div {
       .menus-cards article header {
         display: flex;
         justify-content: space-evenly;
-        margin-left: 80px;
-        margin-right: 80px;
       }
+    }
 
-}
+@media (min-width: 992px){
+    .menus-cards article {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+  }
 }

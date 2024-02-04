@@ -69,14 +69,9 @@
 .introduction  {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 20px;
   gap: 30px;
   background-color: var(--white);
-
-  @media (min-width: 992px){
-    padding: 50px 180px;
-    margin: 0px;
-    }
 }
 
 .introduction ul {
@@ -129,12 +124,15 @@ main ul {
     border-radius: 20px;
     background-color: var(--white);
   }
-
   @media (min-width: 992px){
     flex-direction: row;
     margin: 0px;
   }
 }
+.restaurant-cards{
+  padding: 20px;
+}
+
 
 // partie restaurant 
 
@@ -168,7 +166,6 @@ main ul {
   justify-content: space-between;
   list-style-type: none;
   padding: 0px;
-  margin: 0px;
   gap: 30px;
 }
 
@@ -239,4 +236,9 @@ footer li >a {
   font-weight: lighter;
 } 
 
-
+@media (min-width: 992px){
+  .introduction {
+  padding: 50px 180px;
+  margin: 0px;
+  }
+}
