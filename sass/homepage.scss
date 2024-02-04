@@ -205,7 +205,7 @@ figcaption > p{
 footer h3 {
   font-family:"Shrikhand", cursive;
   font-weight: lighter;
-  font-size: 30px;
+  font-size: 20px;
   margin: 1rem 0rem;
   margin-bottom: 0;
 
@@ -230,6 +230,8 @@ footer ul {
 }
 
 footer li >a {
+  display: flex;
+  gap:10px;
   @include link;
   margin: 0;
   color: var(--white);
@@ -242,3 +244,12 @@ footer li >a {
   margin: 0px;
   }
 }
+
+.fa-handshake-angle {
+  font-size: small;
+}
+
+footer li i {
+  font-size: normal;
+}
+
