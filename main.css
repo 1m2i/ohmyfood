@@ -3,7 +3,7 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 .header-menus {
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
   gap: 50px;
   padding: 30px;
   position: relative;
@@ -824,7 +824,7 @@ figcaption .fas.fa-heart {
   overflow: hidden !important;
   transition-duration: 3s;
 }
-@media (min-width: 992) {
+@media (min-width: 992px) {
   figcaption .fas.fa-heart figcaption .far.fa-heart {
     position: absolute;
     font-size: 2em;
