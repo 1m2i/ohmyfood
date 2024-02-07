@@ -11,8 +11,10 @@
 @media (min-width: 992px) {
   .header-menus {
     align-items: unset;
+    position: unset;
   }
 }
+
 .header-menus img {
   border-radius: unset;
   width: 40%;
@@ -21,6 +23,8 @@
   .header-menus img {
     width: 20%;
     border-radius: unset;
+    align-items: unset;
+    position: unset;
   }
 }
 
@@ -92,10 +96,17 @@ article header .far.fa-heart {
   overflow: hidden !important;
   transition-duration: 3s;
 }
-
-article header .fa-heart:hover,
-article header .fa-heart:focus {
+article header .fas.fa-heart article header .fa-heart:hover,
+article header .fas.fa-heart article header .fa-heart:focus,
+article header .far.fa-heart article header .fa-heart:hover,
+article header .far.fa-heart article header .fa-heart:focus {
   color: var(--purple);
+}
+@media (min-width: 992px) {
+  article header .fas.fa-heart,
+  article header .far.fa-heart {
+    position: unset;
+  }
 }
 
 .menus-cards h1 {
@@ -107,7 +118,8 @@ article header .fa-heart:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .underline-h2 {
@@ -143,6 +155,8 @@ article header .fa-heart:focus {
   line-height: normal;
   border-radius: 20px 20px;
   height: fit-content;
+  margin: 1rem;
+  padding: 20px;
   flex-direction: row;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -202,7 +216,7 @@ li:focus div {
   border: unset;
   height: 50px;
   color: var(--white);
-  width: 50%;
+  width: 30%;
   cursor: pointer;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
   box-shadow: 8px 8px 2px var(--darker-grey);
@@ -247,6 +261,47 @@ footer li > a {
   font-weight: 700;
   padding-left: 2rem;
   margin-top: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li {
+  background-color: var(--white);
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease;
+  max-width: 100%;
+}
+.order-card2 li .order-card2 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li section h3,
+.order-card2 li section p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li b {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: 700;
+  padding-left: 2rem;
+  margin-top: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .order-card2 li {
@@ -317,41 +372,9 @@ footer li > a {
   font-weight: 700;
   padding-left: 2rem;
   margin-top: 20px;
-}
-
-.order-card2 li {
-  background-color: var(--white);
-  padding: 1rem;
-  display: flex;
-  border-radius: 0.75rem;
-  margin: 1rem 0;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-  animation: slide-in-top 3s ease;
-  max-width: 100%;
-}
-.order-card2 li .order-card2 li section {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-}
-
-.order-card2 li section h3,
-.order-card2 li section p {
-  margin: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.order-card2 li b {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-weight: 700;
-  padding-left: 2rem;
-  margin-top: 20px;
 }
 
 .order-card3 li {
@@ -414,19 +437,16 @@ footer li > a {
     font-weight: 700;
     padding-left: 2rem;
     margin-top: 20px;
-  }
-}
-@media (min-width: 992px) and (min-width: 992px) {
-  .header-menus {
-    position: absolute;
-    align-items: unset;
-    gap: unset;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
   .menus-cards article header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 15px;
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
