@@ -97,6 +97,7 @@ article header .fa-heart:focus {
 .menus-cards article section {
    @include horizontal;
     width: 100%;
+    margin: 0px;
 }
 
 .underline-h2 {
@@ -117,6 +118,8 @@ article header .fa-heart:focus {
 .menus-cards article section ul {
     @include horizontal;
     width: 100%; 
+    gap: unset;
+    margin: 0px;
 }
 
 .menus-cards .order-card1 li,
@@ -129,7 +132,7 @@ article header .fa-heart:focus {
   line-height: normal;
   border-radius: 20px 20px;
   height: fit-content;
-  margin: 1rem;
+  margin: 0;
   @include text-appeal;
 }
 

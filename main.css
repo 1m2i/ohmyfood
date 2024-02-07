@@ -1,5 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .header-menus {
   display: flex;
   justify-content: space-evenly;
@@ -101,6 +102,7 @@ article header .fa-heart:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 0px;
 }
 
 .underline-h2 {
@@ -122,6 +124,8 @@ article header .fa-heart:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: unset;
+  margin: 0px;
 }
 
 .menus-cards .order-card1 li,
@@ -135,7 +139,7 @@ article header .fa-heart:focus {
   line-height: normal;
   border-radius: 20px 20px;
   height: fit-content;
-  margin: 1rem;
+  margin: 0;
   flex-direction: row;
   overflow: hidden;
   text-overflow: ellipsis;
