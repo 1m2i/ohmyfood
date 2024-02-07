@@ -1,9 +1,9 @@
 .header-menus {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
-    padding: 30px;
-    position: relative;
+    padding: 20px;
 
     @media (min-width: 992px){
       align-items: unset;
@@ -21,7 +21,7 @@
   }
 
 .fa-arrow-left {
-    font-size: x-large;
+    font-size: larger;
 
     @media (min-width: 992px){
         position: absolute;
@@ -80,11 +80,11 @@ article header .fas.fa-heart {
 article header .fas.fa-heart,
 article header .far.fa-heart {
     position: absolute;
-    font-size: 2em;
+    font-size: 1.5em;
     border: unset; 
     right: 27px; 
     cursor: pointer;
-    padding-top: 15px;
+    padding-top: 20px;
     overflow: hidden !important;
     transition-duration: 3s; 
 }
@@ -93,8 +93,13 @@ article header .fa-heart:hover,
 article header .fa-heart:focus {
     color: var( --purple);
 }
-  
+
+.menus-cards h1 {
+  font-size: 27px;
+}
+
 .menus-cards article section {
+  font-style: normal;
    @include horizontal;
     width: 100%;
     margin: 0px;
@@ -131,7 +136,6 @@ article header .fa-heart:focus {
       line-height: normal;
       border-radius: 20px 20px;
       height: fit-content;
-      margin: 1em;
       @include text-appeal;
   }
 }
@@ -179,6 +183,7 @@ li:focus div {
   height: fit-content;
   margin: 1rem;
   @include text-appeal;
+  margin-bottom: unset;
 }
 
 .menus-cards .menus-btn {
