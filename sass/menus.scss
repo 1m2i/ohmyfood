@@ -83,23 +83,19 @@ article header .fas.fa-heart {
 
 article header .fas.fa-heart,
 article header .far.fa-heart {
-    position: absolute;
-    font-size: 1.5em;
-    border: unset; 
-    right: 27px; 
-    cursor: pointer;
-    padding-top: 20px;
-    overflow: hidden !important;
-    transition-duration: 3s; 
+  position: absolute;
+  font-size: 2em;
+  border: unset; 
+  right: 27px; 
+  cursor: pointer;
+  padding-top: 15px;
+  overflow: hidden !important;
+  transition-duration: 3s; 
+}
 
-  article header .fa-heart:hover,
-  article header .fa-heart:focus {
-      color: var( --purple);
-  }
-
-  @media (min-width: 992px){
-    position: unset;
-  }
+article header .fa-heart:hover,
+article header .fa-heart:focus {
+  color: var(--purple);
 }
 
 .menus-cards h1 {
@@ -110,8 +106,6 @@ article header .far.fa-heart {
   font-style: normal;
    @include horizontal;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .underline-h2 {
@@ -145,9 +139,8 @@ article header .far.fa-heart {
       line-height: normal;
       border-radius: 20px 20px;
       height: fit-content;
-      margin: 1rem;
       padding: 20px;
-      @include text-appeal;
+      
   }
 }
 
@@ -192,8 +185,6 @@ li:focus div {
   line-height: normal;
   border-radius: 20px 20px;
   height: fit-content;
-  margin: 1rem;
-  @include text-appeal;
   margin-bottom: unset;
 }
 
@@ -216,115 +207,143 @@ footer li >a{
 }
 
 //* menus structure *//
-//* menu entrée *//
-
 .order-card1 li {
-    @include text-style;    
-    .order-card1 li section {
-    @include text-overflow;
-  }
-}  
-  .order-card1 li section h3,
-  .order-card1 li section p {
-    margin: 0;
-    @include text-overflow;
-  }
-  
-  .order-card1 li b {
-    @include text-end;
-    @include text-overflow;
-  }
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease ;
+  max-width: 100%;
+}
 
-//* menu plat *//
+.order-card1 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.order-card1 li section h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card1 li section p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card1 li b {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
 .order-card2 li {
-  @include text-style;    
-  .order-card2 li section {
-  @include text-overflow;
- }
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease ;
+  max-width: 100%;
 }
 
-.order-card2 li section h3,
-.order-card2 li section p {
-    margin: 0;
-   @include text-overflow
-  }
-  
-  .order-card2 li b {
-    @include text-end;
-    @include text-overflow;
-  }
-
-  .order-card2 li {
-  @include text-style;    
-  .order-card2 li section {
-  @include text-overflow;
- }
+.order-card2 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-  
-.order-card2 li section h3,
+.order-card2 li section h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .order-card2 li section p {
   margin: 0;
-   @include text-overflow
-  }
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
 .order-card2 li b {
-    @include text-end;
-  }
-
-  //* menu plat *//
-.order-card2 li {
-    @include text-style;    
-    .order-card2 li section {
-    @include text-overflow;
-   }
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 2rem;
+  margin-top: 20px;
 }
-    
-.order-card2 li section h3,
-.order-card2 li section p {
-      margin: 0;
-     @include text-overflow
-    }
-    
-    .order-card2 li b {
-      @include text-end;
-      @include text-overflow;
-}
- //* menus dessert *//
 
 .order-card3 li {
-    @include text-style;    
-    .order-card3 li section {
-    @include text-overflow;
-   }
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease ;
+  max-width: 100%;
 }
 
-.order-card3 li section h3,
+.order-card3 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.order-card3 li section h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .order-card3 li section p {
-    margin: 0;
-     @include text-overflow
-    }
-    
-    .order-card3 li b {
-      @include text-end;
-    }
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card3 li b {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
+.menus-cards .menus-btn {
+  align-self: center;
+  border-radius: 30px;
+  border: unset;
+  height: 50px;
+  color: white;
+  width: 50%;
+  cursor: pointer;
+  background-image: linear-gradient(0deg,rgba(147,86,220,.8),rgba(255,121,218,.8));
+  box-shadow: 8px 8px 2px #acabab;
+}
+
 @media (min-width: 992px){
-      .order-card3 li section {
-        @include text-overflow;
-      }
-      .order-card3 li section h3 {
-        margin: 0;
-        @include text-overflow;
-      }
-      
-      .order-card3 li section p {
-        margin: 0;
-        @include text-overflow;
-      }
-      
-      .order-card3 li b {
-        @include text-end;
-        @include text-overflow;
-      }
+
 
 @media (min-width: 992px){
     .menus-cards article header {

@@ -88,25 +88,18 @@ article header .fas.fa-heart {
 article header .fas.fa-heart,
 article header .far.fa-heart {
   position: absolute;
-  font-size: 1.5em;
+  font-size: 2em;
   border: unset;
   right: 27px;
   cursor: pointer;
-  padding-top: 20px;
+  padding-top: 15px;
   overflow: hidden !important;
   transition-duration: 3s;
 }
-article header .fas.fa-heart article header .fa-heart:hover,
-article header .fas.fa-heart article header .fa-heart:focus,
-article header .far.fa-heart article header .fa-heart:hover,
-article header .far.fa-heart article header .fa-heart:focus {
+
+article header .fa-heart:hover,
+article header .fa-heart:focus {
   color: var(--purple);
-}
-@media (min-width: 992px) {
-  article header .fas.fa-heart,
-  article header .far.fa-heart {
-    position: unset;
-  }
 }
 
 .menus-cards h1 {
@@ -118,8 +111,6 @@ article header .far.fa-heart article header .fa-heart:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .underline-h2 {
@@ -155,11 +146,7 @@ article header .far.fa-heart article header .fa-heart:focus {
   line-height: normal;
   border-radius: 20px 20px;
   height: fit-content;
-  margin: 1rem;
   padding: 20px;
-  flex-direction: row;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .fa-circle-check {
@@ -203,10 +190,6 @@ li:focus div {
   line-height: normal;
   border-radius: 20px 20px;
   height: fit-content;
-  margin: 1rem;
-  flex-direction: row;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin-bottom: unset;
 }
 
@@ -229,7 +212,7 @@ footer li > a {
 }
 
 .order-card1 li {
-  background-color: var(--white);
+  background-color: #fff;
   padding: 1rem;
   display: flex;
   border-radius: 0.75rem;
@@ -240,13 +223,20 @@ footer li > a {
   animation: slide-in-top 3s ease;
   max-width: 100%;
 }
-.order-card1 li .order-card1 li section {
+
+.order-card1 li section {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.order-card1 li section h3,
+.order-card1 li section h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .order-card1 li section p {
   margin: 0;
   text-overflow: ellipsis;
@@ -255,19 +245,16 @@ footer li > a {
 }
 
 .order-card1 li b {
+  font-weight: 700;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-weight: 700;
   padding-left: 2rem;
   margin-top: 20px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .order-card2 li {
-  background-color: var(--white);
+  background-color: #fff;
   padding: 1rem;
   display: flex;
   border-radius: 0.75rem;
@@ -278,13 +265,20 @@ footer li > a {
   animation: slide-in-top 3s ease;
   max-width: 100%;
 }
-.order-card2 li .order-card2 li section {
+
+.order-card2 li section {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.order-card2 li section h3,
+.order-card2 li section h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .order-card2 li section p {
   margin: 0;
   text-overflow: ellipsis;
@@ -293,92 +287,16 @@ footer li > a {
 }
 
 .order-card2 li b {
+  font-weight: 700;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-weight: 700;
   padding-left: 2rem;
   margin-top: 20px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.order-card2 li {
-  background-color: var(--white);
-  padding: 1rem;
-  display: flex;
-  border-radius: 0.75rem;
-  margin: 1rem 0;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-  animation: slide-in-top 3s ease;
-  max-width: 100%;
-}
-.order-card2 li .order-card2 li section {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.order-card2 li section h3,
-.order-card2 li section p {
-  margin: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.order-card2 li b {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-weight: 700;
-  padding-left: 2rem;
-  margin-top: 20px;
-}
-
-.order-card2 li {
-  background-color: var(--white);
-  padding: 1rem;
-  display: flex;
-  border-radius: 0.75rem;
-  margin: 1rem 0;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-  animation: slide-in-top 3s ease;
-  max-width: 100%;
-}
-.order-card2 li .order-card2 li section {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.order-card2 li section h3,
-.order-card2 li section p {
-  margin: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.order-card2 li b {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-weight: 700;
-  padding-left: 2rem;
-  margin-top: 20px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .order-card3 li {
-  background-color: var(--white);
+  background-color: #fff;
   padding: 1rem;
   display: flex;
   border-radius: 0.75rem;
@@ -389,13 +307,20 @@ footer li > a {
   animation: slide-in-top 3s ease;
   max-width: 100%;
 }
-.order-card3 li .order-card3 li section {
+
+.order-card3 li section {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.order-card3 li section h3,
+.order-card3 li section h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .order-card3 li section p {
   margin: 0;
   text-overflow: ellipsis;
@@ -404,44 +329,26 @@ footer li > a {
 }
 
 .order-card3 li b {
+  font-weight: 700;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-weight: 700;
   padding-left: 2rem;
   margin-top: 20px;
 }
 
-@media (min-width: 992px) {
-  .order-card3 li section {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .order-card3 li section h3 {
-    margin: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .order-card3 li section p {
-    margin: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .order-card3 li b {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    font-weight: 700;
-    padding-left: 2rem;
-    margin-top: 20px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
+.menus-cards .menus-btn {
+  align-self: center;
+  border-radius: 30px;
+  border: unset;
+  height: 50px;
+  color: white;
+  width: 50%;
+  cursor: pointer;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
+  box-shadow: 8px 8px 2px #acabab;
 }
+
 @media (min-width: 992px) and (min-width: 992px) {
   .menus-cards article header {
     display: flex;
