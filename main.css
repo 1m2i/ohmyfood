@@ -463,7 +463,7 @@ h1 {
 
 .introduction li:hover .icons,
 .introduction li:focus .icons {
-  color: var(--light-purple);
+  color: rgb(147, 86, 220);
 }
 
 main ul {
@@ -497,7 +497,7 @@ main ul main li {
 }
 @media (min-width: 992px) {
   .restaurant-cards {
-    padding: 50px 180px;
+    padding: 50px 120px;
   }
 }
 
@@ -600,7 +600,7 @@ footer li > a {
 
 @media (min-width: 992px) {
   .introduction {
-    padding: 50px 180px;
+    padding: 50px 120px;
     margin: 0px;
   }
 }
