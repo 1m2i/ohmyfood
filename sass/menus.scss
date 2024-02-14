@@ -92,14 +92,67 @@ article header .far.fa-heart {
   overflow: hidden !important;
   transition-duration: 3s; 
 
+  @media (min-width: 992px){
+    position: unset;
+    gap: 30px;
+    }
+  }
+
 article header .fa-heart:hover,
 article header .fa-heart:focus {
   color: var(--purple);
 }
-@media (min-width: 992px){
-  position: unset;
-  gap: 30px;
-  }
+
+figcaption .far.fa-heart {
+  position: absolute;
+  font-size: 2em;
+  border: unset; 
+  right: 20px; 
+  padding-top: 15px;
+  cursor: pointer;
+  overflow: hidden !important;
+  transition-duration: 3s; 
+}
+
+figcaption .fas.fa-heart {
+  color: transparent;
+  position: absolute;
+  font-size: 2em;
+  border: unset; 
+  right: 20px; 
+  padding-top: 15px;
+  cursor: pointer;
+  overflow: hidden !important;
+  transition-duration: 3s; 
+}
+
+figcaption .far.fa-heart:hover,
+figcaption .far.fa-heart:focus,
+figcaption .fas.fa-heart:hover,
+figcaption .fas.fa-heart:focus {
+  color: rgb(147, 86, 220)
+}
+
+article header .far.fa-heart {
+  position: absolute;
+  font-size: 2em;
+  border: unset; 
+  right: 20px; 
+  padding-top: 15px;
+}
+
+article header .fas.fa-heart {
+  color: transparent;
+  position: absolute;
+  font-size: 2em;
+  border: unset; 
+  right: 20px; 
+  padding-top: 15px;
+}
+
+article header .fa-heart:hover,
+article header .fa-heart:focus {
+  color: rgb(147, 86, 220)
 }
 
 .menus-cards h1 {
