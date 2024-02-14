@@ -88,18 +88,26 @@ article header .fas.fa-heart {
 article header .fas.fa-heart,
 article header .far.fa-heart {
   position: absolute;
-  font-size: 2em;
+  font-size: 1.7em;
   border: unset;
-  right: 27px;
+  right: 20px;
   cursor: pointer;
   padding-top: 15px;
   overflow: hidden !important;
   transition-duration: 3s;
 }
-
-article header .fa-heart:hover,
-article header .fa-heart:focus {
+article header .fas.fa-heart article header .fa-heart:hover,
+article header .fas.fa-heart article header .fa-heart:focus,
+article header .far.fa-heart article header .fa-heart:hover,
+article header .far.fa-heart article header .fa-heart:focus {
   color: var(--purple);
+}
+@media (min-width: 992px) {
+  article header .fas.fa-heart,
+  article header .far.fa-heart {
+    position: unset;
+    gap: 30px;
+  }
 }
 
 .menus-cards h1 {
@@ -146,7 +154,6 @@ article header .fa-heart:focus {
   line-height: normal;
   border-radius: 20px 20px;
   height: fit-content;
-  padding: 20px;
 }
 
 .fa-circle-check {
@@ -337,29 +344,18 @@ footer li > a {
   margin-top: 20px;
 }
 
-.menus-cards .menus-btn {
-  align-self: center;
-  border-radius: 30px;
-  border: unset;
-  height: 50px;
-  color: white;
-  width: 50%;
-  cursor: pointer;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
-  box-shadow: 8px 8px 2px #acabab;
-}
-
-@media (min-width: 992px) and (min-width: 992px) {
+@media (min-width: 992px) {
   .menus-cards article header {
     display: flex;
     justify-content: center;
     gap: 15px;
   }
 }
-@media (min-width: 992px) and (min-width: 992px) {
+@media (min-width: 992px) {
   .menus-cards article {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 50px 100px;
   }
 }
 h1 {
@@ -742,54 +738,6 @@ figure {
   border-radius: 20px;
   background: var(--white);
   width: 100%;
-}
-
-figcaption .far.fa-heart,
-figcaption .fas.fa-heart {
-  position: absolute;
-  font-size: 2em;
-  border: unset;
-  right: 20px;
-  padding-top: 5px;
-  cursor: pointer;
-}
-
-figcaption .fas.fa-heart {
-  color: transparent;
-  overflow: hidden !important;
-  transition-duration: 3s;
-}
-@media (min-width: 992px) {
-  figcaption .fas.fa-heart figcaption .far.fa-heart {
-    position: absolute;
-    font-size: 2em;
-    border: unset;
-    right: 20px;
-    padding-top: 5px;
-    cursor: pointer;
-  }
-  figcaption .fas.fa-heart figcaption .fas.fa-heart {
-    color: transparent;
-    position: absolute;
-    font-size: 2em;
-    border: unset;
-    right: 20px;
-    padding-top: 5px;
-    cursor: pointer;
-  }
-  figcaption .fas.fa-heart figcaption .far.fa-heart:hover,
-  figcaption .fas.fa-heart figcaption .far.fa-heart:focus,
-  figcaption .fas.fa-heart figcaption .fas.fa-heart:hover,
-  figcaption .fas.fa-heart figcaption .fas.fa-heart:focus {
-    color: var(--purple);
-  }
-}
-
-figcaption .far.fa-heart:hover,
-figcaption .far.fa-heart:focus,
-figcaption .fas.fa-heart:hover,
-figcaption .fas.fa-heart:focus {
-  color: var(--purple);
 }
 
 figcaption {

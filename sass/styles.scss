@@ -46,43 +46,10 @@ figure {
   width: 100%;
 }
 
-figcaption .far.fa-heart,
-figcaption .fas.fa-heart {
-    @include icon-heart ;
-}
 
 //icon animation 
-figcaption .fas.fa-heart {
-    color: transparent;
-    overflow: hidden !important;
-    transition-duration: 3s; 
-
-    @media (min-width:992px){
-      figcaption .far.fa-heart {
-          @include icon-heart ;
-      }
-      
-      figcaption .fas.fa-heart {
-        color: transparent;
-        @include icon-heart ;
-      }
-      
-      figcaption .far.fa-heart:hover,
-      figcaption .far.fa-heart:focus,
-      figcaption .fas.fa-heart:hover,
-      figcaption .fas.fa-heart:focus {
-        color: var(--purple)
-      }
-    }
-}
 
 
-figcaption .far.fa-heart:hover,
-figcaption .far.fa-heart:focus,
-figcaption .fas.fa-heart:hover,
-figcaption .fas.fa-heart:focus {
-  color: var(--purple);
-}
 
 figcaption {
   @include space;
