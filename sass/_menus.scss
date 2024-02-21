@@ -26,6 +26,7 @@
 
 .fa-arrow-left {
     font-size: larger;
+    color: black;
 
     @media (min-width: 992px){
         position: absolute;
@@ -78,81 +79,47 @@
 }
 
 article header .fas.fa-heart {
-    color: transparent;
+  color: transparent;
 }
 
 article header .fas.fa-heart,
 article header .far.fa-heart {
   position: absolute;
-  font-size: 1.7em;
+  font-size: 2em;
   border: unset; 
-  right: 20px; 
+  right: 27px; 
   cursor: pointer;
   padding-top: 15px;
   overflow: hidden !important;
   transition-duration: 3s; 
+}
 
-  @media (min-width: 992px){
-    position: unset;
-    gap: 30px;
-    }
+  article header .far.fa-heart:hover,
+  article header .far.fa-heart:focus,
+  article header .fas.fa-heart:hover,
+  article header .fas.fa-heart:focus {
+    color: rgb(147, 86, 220);
   }
 
-article header .fa-heart:hover,
-article header .fa-heart:focus {
-  color: var(--purple);
+
+
+figure .far.fa-heart,
+figure .fas.fa-heart {
+  @include icon-heart1;
+  cursor: pointer;
 }
 
-figcaption .far.fa-heart {
-  position: absolute;
-  font-size: 2em;
-  border: unset; 
-  right: 20px; 
-  padding-top: 15px;
-  cursor: pointer;
+figure .fas.fa-heart {
+  color: transparent;
   overflow: hidden !important;
   transition-duration: 3s; 
 }
 
-figcaption .fas.fa-heart {
-  color: transparent;
-  position: absolute;
-  font-size: 2em;
-  border: unset; 
-  right: 20px; 
-  padding-top: 15px;
-  cursor: pointer;
-  overflow: hidden !important;
-  transition-duration: 3s; 
-}
-
-figcaption .far.fa-heart:hover,
-figcaption .far.fa-heart:focus,
-figcaption .fas.fa-heart:hover,
-figcaption .fas.fa-heart:focus {
-  color: rgb(147, 86, 220)
-}
-
-article header .far.fa-heart {
-  position: absolute;
-  font-size: 2em;
-  border: unset; 
-  right: 20px; 
-  padding-top: 15px;
-}
-
-article header .fas.fa-heart {
-  color: transparent;
-  position: absolute;
-  font-size: 2em;
-  border: unset; 
-  right: 20px; 
-  padding-top: 15px;
-}
-
-article header .fa-heart:hover,
-article header .fa-heart:focus {
-  color: rgb(147, 86, 220)
+figure .far.fa-heart:hover,
+figure .far.fa-heart:focus,
+figure .fas.fa-heart:hover,
+figure .fas.fa-heart:focus {
+  color: rgb(147, 86, 220);
 }
 
 
@@ -391,10 +358,15 @@ footer li >a{
     .menus-cards article header {
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 30px;
     }
 }
-  
+@media (min-width: 992px){
+  article header .fas.fa-heart,
+  article header .far.fa-heart {
+    right: 120px;
+  }
+}
 @media (min-width: 992px){
     .menus-cards article {
       margin-left: 120px;

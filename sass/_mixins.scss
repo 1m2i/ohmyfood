@@ -14,15 +14,13 @@
     display: flex;
     justify-content: space-between;
 }
-  
+
 @mixin horizontal {
     display: flex;
     flex-direction: column;
 }
 
-
-
-@mixin icon-heart {
+@mixin icon-heart1 {
     position: absolute;
     font-size: 2em;
     border: unset; 
