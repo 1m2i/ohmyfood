@@ -551,8 +551,12 @@ main ul main li {
   transition: 0.3s;
   margin: 0;
   background-color: var(--white);
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
 }
-.restaurant-cards figure a {
+
+a {
   color: black;
   text-decoration: none;
   list-style-type: none;

@@ -99,8 +99,6 @@ h1 {
   background-color: var(--light-grey);
 }
 
-
-
 .introduction li:hover .icons,
 .introduction li:focus .icons {
   color: rgb(147, 86, 220);
@@ -174,10 +172,15 @@ main ul {
   transition: 0.3s;
   margin: 0;
   background-color: var(--white);
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
 
-  a {
-    @include link;
-  }
+a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .restaurant-cards img {
@@ -216,7 +219,10 @@ footer h3 {
 
 footer ul {
   padding:0;
-  @include link;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+
 
   @media (min-width: 992px){
     display: flex;
@@ -229,7 +235,9 @@ footer ul {
 footer li >a {
   display: flex;
   gap:10px;
-  @include link;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
   margin: 0;
   color: var(--white);
   font-weight: lighter;
